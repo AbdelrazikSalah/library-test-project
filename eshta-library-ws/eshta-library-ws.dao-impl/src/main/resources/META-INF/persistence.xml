@@ -6,7 +6,8 @@
     <persistence-unit name="testPU" transaction-type="RESOURCE_LOCAL">
         <provider>org.hibernate.ejb.HibernatePersistence</provider>
         
-        <class>com.siliconnile.library.domain.SampleObject</class>
+     
+        <class>com.siliconnile.library.domain.Book</class>
         <exclude-unlisted-classes />
 
         <properties>

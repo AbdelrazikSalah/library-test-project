@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="eshta-library-ws.ws-web">
+        <wb-resource deploy-path="/" source-path="/target/m2e-wtp/web-resources"/>
+        <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
+        <dependent-module archiveName="eshta-library-ws.domain-1.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/eshta-library-ws.domain/eshta-library-ws.domain">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="eshta-library-ws.service-1.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/eshta-library-ws.service/eshta-library-ws.service">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="eshta-library-ws.dao-1.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/eshta-library-ws.dao/eshta-library-ws.dao">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="eshta-library-ws.dao-impl-1.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/eshta-library-ws.dao-impl/eshta-library-ws.dao-impl">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="eshta-library-ws.settings-1.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/eshta-library-ws.settings/eshta-library-ws.settings">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="eshta-library-ws.ws-service-api-1.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/eshta-library-ws.ws-service-api/eshta-library-ws.ws-service-api">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="eshta-library-ws.dto-1.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/eshta-library-ws.dto/eshta-library-ws.dto">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="eshta-library-ws.ws-service-impl-1.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/eshta-library-ws.ws-service-impl/eshta-library-ws.ws-service-impl">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <property name="context-root" value="eshta-library-ws.ws-web"/>
+        <property name="java-output-path" value="/eshta-library-ws.ws-web/target/classes"/>
+        <property name="component.exclusion.patterns" value="WEB-INF/lib/*"/>
+    </wb-module>
+</project-modules>

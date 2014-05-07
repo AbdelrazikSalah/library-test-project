@@ -5,6 +5,7 @@
 
 
     <include file="changelists/db.changelog-1.0.xml" />
+    <include file="changelists/book.xml" />
 
 </databaseChangeLog>
 

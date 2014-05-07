@@ -1,0 +1,3 @@
+default.configuration=eshta-library-ws.dao-impl
+eclipse.preferences.version=1
+hibernate3.enabled=true
