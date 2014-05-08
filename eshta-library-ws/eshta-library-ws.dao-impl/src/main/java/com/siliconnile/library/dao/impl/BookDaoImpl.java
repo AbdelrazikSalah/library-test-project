@@ -14,7 +14,7 @@ import com.siliconnile.library.domain.Book;
 
 /**
  * User: Abdelrazik
- * Date: 04/16/14
+ * Date: 07/5/14
  */
 @Repository
 public class BookDaoImpl extends BasicJpaDao<Book> implements BookDao {

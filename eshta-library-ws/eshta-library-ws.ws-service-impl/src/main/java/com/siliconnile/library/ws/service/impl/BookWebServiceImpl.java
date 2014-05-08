@@ -17,7 +17,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 /**
  * User: Abdelrazik
- * Date: 05/5/14
+ * Date: 07/5/14
  */
 public class BookWebServiceImpl implements BookWS {
     
@@ -46,7 +46,7 @@ public class BookWebServiceImpl implements BookWS {
 		book.setIsbn(isbn);
 		book.setPictureUrl(pictureUrl);
 		
-		Book e = ((BookMaintenance) book).addOrUpdateNewBook(book);
+		Book e =  bookMaintenance.addOrUpdateNewBook(book);
 		// create new employee DTO and fill it from e
 		DTOconverter converter = new DTOconverter();
 		BookDTO result = converter.getBookDTO(e);

@@ -8,7 +8,7 @@ import javax.persistence.Table;
 
 /**
  * User: Abdelrazik
- * Date: 05/5/14
+ * Date: 07/5/14
  */
 @SuppressWarnings("serial")
 @Entity
@@ -46,7 +46,7 @@ public class Book extends BasicObject {
 		this.author = author;
 	}
 
-	@Column(name = "picture_URL")
+	@Column(name = "picture_url")
 	public String getPictureUrl() {
 		return pictureUrl;
 	}

@@ -13,8 +13,8 @@
             <column name="author" type="varchar(50)">
                 <constraints nullable="false"/>
             </column>
-            <column name="isbn" type="int"/>
-            <column name="picture_URL" type="varchar(300)"/>
+            <column name="isbn" type="varchar(50)"/>
+            <column name="picture_url" type="varchar(300)"/>
         </createTable>
     </changeSet>
 

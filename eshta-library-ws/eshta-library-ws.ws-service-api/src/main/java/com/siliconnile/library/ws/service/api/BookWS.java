@@ -19,7 +19,7 @@ import com.siliconnile.library.dto.BookDTO;
 
 /**
  * User: Abdelrazik
- * Date: 05/5/14
+ * Date: 07/5/14
  */
 @Path("/")
 @WebService
@@ -31,7 +31,7 @@ public interface BookWS {
     @POST
     @Path("/addOrUpdateNewBook")
     @Produces(MediaType.APPLICATION_JSON)
-    BookDTO addOrUpdateNewBook(@FormParam ("id") Long id,@FormParam ("title") String title, @FormParam ("author") String author, @FormParam ("isbn") String isbn,  @FormParam ("cover_image") String coverImage);
+    BookDTO addOrUpdateNewBook(@FormParam ("id") Long id,@FormParam ("title") String title, @FormParam ("author") String author, @FormParam ("isbn") String isbn,  @FormParam ("picture_url") String pictureURL);
 
     
     
