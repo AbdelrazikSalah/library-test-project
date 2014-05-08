@@ -10270,3 +10270,643 @@ Caused by: org.hibernate.PropertyNotFoundException: Could not find a setter for 
 16:17:47,922 Thread-1  INFO SessionFactoryImpl:769 - closing
 16:17:47,922 Thread-1 DEBUG DefaultListableBeanFactory:489 - Retrieved dependent beans for bean 'org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter#62736dde': [entityManagerFactory]
 16:17:47,922 Thread-1 DEBUG DisposableBeanAdapter:275 - Invoking destroy method 'close' on bean with name 'dataSource'
+17:11:58,147 main  INFO ContextLoader:272 - Root WebApplicationContext: initialization started
+17:11:58,304 main DEBUG StandardServletEnvironment:112 - Initializing new StandardServletEnvironment
+17:11:58,304 main DEBUG StandardServletEnvironment:107 - Adding [servletConfigInitParams] PropertySource with lowest search precedence
+17:11:58,305 main DEBUG StandardServletEnvironment:107 - Adding [servletContextInitParams] PropertySource with lowest search precedence
+17:11:58,311 main DEBUG StandardServletEnvironment:107 - Adding [jndiProperties] PropertySource with lowest search precedence
+17:11:58,323 main DEBUG StandardServletEnvironment:107 - Adding [systemProperties] PropertySource with lowest search precedence
+17:11:58,323 main DEBUG StandardServletEnvironment:107 - Adding [systemEnvironment] PropertySource with lowest search precedence
+17:11:58,324 main DEBUG StandardServletEnvironment:116 - Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,jndiProperties,systemProperties,systemEnvironment]
+17:11:58,345 main  INFO XmlWebApplicationContext:503 - Refreshing Root WebApplicationContext: startup date [Thu May 08 17:11:58 EEST 2014]; root of context hierarchy
+17:11:58,365 main DEBUG StandardServletEnvironment:172 - Replacing [servletContextInitParams] PropertySource with [servletContextInitParams]
+17:11:58,471 main DEBUG StandardEnvironment:112 - Initializing new StandardEnvironment
+17:11:58,472 main DEBUG StandardEnvironment:107 - Adding [systemProperties] PropertySource with lowest search precedence
+17:11:58,472 main DEBUG StandardEnvironment:107 - Adding [systemEnvironment] PropertySource with lowest search precedence
+17:11:58,482 main DEBUG StandardEnvironment:116 - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+17:11:58,491 main DEBUG StandardEnvironment:112 - Initializing new StandardEnvironment
+17:11:58,492 main DEBUG StandardEnvironment:107 - Adding [systemProperties] PropertySource with lowest search precedence
+17:11:58,501 main DEBUG StandardEnvironment:107 - Adding [systemEnvironment] PropertySource with lowest search precedence
+17:11:58,502 main DEBUG StandardEnvironment:116 - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+17:11:58,523 main  INFO XmlBeanDefinitionReader:315 - Loading XML bean definitions from class path resource [dao-config.xml]
+17:11:58,547 main DEBUG DefaultDocumentLoader:72 - Using JAXP provider [org.apache.xerces.jaxp.DocumentBuilderFactoryImpl]
+17:11:58,890 main DEBUG PluggableSchemaResolver:140 - Loading schema mappings from [META-INF/spring.schemas]
+17:11:58,897 main DEBUG PluggableSchemaResolver:146 - Loaded schema mappings: {http://www.springframework.org/schema/util/spring-util.xsd=org/springframework/beans/factory/xml/spring-util-3.1.xsd, http://cxf.apache.org/schemas/configuration/security.xsd=schemas/configuration/security.xsd, http://www.springframework.org/schema/beans/spring-beans-3.1.xsd=org/springframework/beans/factory/xml/spring-beans-3.1.xsd, http://www.springframework.org/schema/task/spring-task.xsd=org/springframework/scheduling/config/spring-task-3.1.xsd, http://www.springframework.org/schema/cache/spring-cache.xsd=org/springframework/cache/config/spring-cache-3.1.xsd, http://www.springframework.org/schema/aop/spring-aop-3.0.xsd=org/springframework/aop/config/spring-aop-3.0.xsd, http://www.springframework.org/schema/task/spring-task-3.1.xsd=org/springframework/scheduling/config/spring-task-3.1.xsd, http://www.springframework.org/schema/aop/spring-aop-2.0.xsd=org/springframework/aop/config/spring-aop-2.0.xsd, http://www.springframework.org/schema/tool/spring-tool-2.5.xsd=org/springframework/beans/factory/xml/spring-tool-2.5.xsd, http://www.springframework.org/schema/beans/spring-beans.xsd=org/springframework/beans/factory/xml/spring-beans-3.1.xsd, http://cxf.apache.org/schemas/wsdl/http-conf.xsd=schemas/wsdl/http-conf.xsd, http://www.springframework.org/schema/jee/spring-jee-2.5.xsd=org/springframework/ejb/config/spring-jee-2.5.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.1.xsd=org/springframework/jdbc/config/spring-jdbc-3.1.xsd, http://www.springframework.org/schema/tool/spring-tool-3.1.xsd=org/springframework/beans/factory/xml/spring-tool-3.1.xsd, http://www.springframework.org/schema/jee/spring-jee-3.1.xsd=org/springframework/ejb/config/spring-jee-3.1.xsd, http://www.springframework.org/schema/aop/spring-aop.xsd=org/springframework/aop/config/spring-aop-3.1.xsd, http://www.springframework.org/schema/beans/spring-beans-2.0.xsd=org/springframework/beans/factory/xml/spring-beans-2.0.xsd, http://www.springframework.org/schema/beans/spring-beans-3.0.xsd=org/springframework/beans/factory/xml/spring-beans-3.0.xsd, http://www.springframework.org/schema/task/spring-task-3.0.xsd=org/springframework/scheduling/config/spring-task-3.0.xsd, http://schemas.xmlsoap.org/wsdl/2003-02-11.xsd=schemas/wsdl/wsdl.xsd, http://www.springframework.org/schema/tx/spring-tx-2.5.xsd=org/springframework/transaction/config/spring-tx-2.5.xsd, http://www.springframework.org/schema/context/spring-context-2.5.xsd=org/springframework/context/config/spring-context-2.5.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.0.xsd=org/springframework/jdbc/config/spring-jdbc-3.0.xsd, http://www.springframework.org/schema/tool/spring-tool-3.0.xsd=org/springframework/beans/factory/xml/spring-tool-3.0.xsd, http://www.springframework.org/schema/tx/spring-tx.xsd=org/springframework/transaction/config/spring-tx-3.1.xsd, http://www.springframework.org/schema/util/spring-util-2.5.xsd=org/springframework/beans/factory/xml/spring-util-2.5.xsd, http://www.springframework.org/schema/tool/spring-tool-2.0.xsd=org/springframework/beans/factory/xml/spring-tool-2.0.xsd, http://www.springframework.org/schema/lang/spring-lang.xsd=org/springframework/scripting/config/spring-lang-3.1.xsd, http://cxf.apache.org/configuration/parameterized-types=schemas/configuration/parameterized-types.xsd, http://www.springframework.org/schema/lang/spring-lang-2.5.xsd=org/springframework/scripting/config/spring-lang-2.5.xsd, http://cxf.apache.org/schemas/configuration/cxf-beans.xsd=schemas/configuration/cxf-beans.xsd, http://www.springframework.org/schema/jee/spring-jee-3.0.xsd=org/springframework/ejb/config/spring-jee-3.0.xsd, http://www.springframework.org/schema/tx/spring-tx-3.1.xsd=org/springframework/transaction/config/spring-tx-3.1.xsd, http://www.springframework.org/schema/jee/spring-jee-2.0.xsd=org/springframework/ejb/config/spring-jee-2.0.xsd, http://www.springframework.org/schema/context/spring-context-3.1.xsd=org/springframework/context/config/spring-context-3.1.xsd, http://cxf.apache.org/schemas/core.xsd=schemas/core.xsd, http://www.springframework.org/schema/util/spring-util-3.1.xsd=org/springframework/beans/factory/xml/spring-util-3.1.xsd, http://www.springframework.org/schema/lang/spring-lang-3.1.xsd=org/springframework/scripting/config/spring-lang-3.1.xsd, http://cxf.apache.org/schemas/jaxrs.xsd=schemas/jaxrs.xsd, http://www.springframework.org/schema/cache/spring-cache-3.1.xsd=org/springframework/cache/config/spring-cache-3.1.xsd, http://www.springframework.org/schema/context/spring-context.xsd=org/springframework/context/config/spring-context-3.1.xsd, http://www.springframework.org/schema/jee/spring-jee.xsd=org/springframework/ejb/config/spring-jee-3.1.xsd, http://www.springframework.org/schema/aop/spring-aop-2.5.xsd=org/springframework/aop/config/spring-aop-2.5.xsd, http://cxf.apache.org/schemas/configuration/http-conf.xsd=schemas/configuration/http-conf.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc.xsd=org/springframework/jdbc/config/spring-jdbc-3.1.xsd, http://www.springframework.org/schema/tx/spring-tx-2.0.xsd=org/springframework/transaction/config/spring-tx-2.0.xsd, http://www.springframework.org/schema/aop/spring-aop-3.1.xsd=org/springframework/aop/config/spring-aop-3.1.xsd, http://www.springframework.org/schema/tx/spring-tx-3.0.xsd=org/springframework/transaction/config/spring-tx-3.0.xsd, http://www.springframework.org/schema/context/spring-context-3.0.xsd=org/springframework/context/config/spring-context-3.0.xsd, http://www.springframework.org/schema/tool/spring-tool.xsd=org/springframework/beans/factory/xml/spring-tool-3.1.xsd, http://www.springframework.org/schema/util/spring-util-3.0.xsd=org/springframework/beans/factory/xml/spring-util-3.0.xsd, http://www.springframework.org/schema/lang/spring-lang-3.0.xsd=org/springframework/scripting/config/spring-lang-3.0.xsd, http://www.springframework.org/schema/util/spring-util-2.0.xsd=org/springframework/beans/factory/xml/spring-util-2.0.xsd, http://www.springframework.org/schema/lang/spring-lang-2.0.xsd=org/springframework/scripting/config/spring-lang-2.0.xsd, http://schemas.xmlsoap.org/wsdl/http/=schemas/wsdl/http.xsd, http://cxf.apache.org/schemas/configuration/parameterized-types.xsd=schemas/configuration/parameterized-types.xsd, http://schemas.xmlsoap.org/ws/2004/08/addressing=schemas/wsdl/addressing.xsd, http://schemas.xmlsoap.org/wsdl/=schemas/wsdl/wsdl.xsd, http://www.springframework.org/schema/beans/spring-beans-2.5.xsd=org/springframework/beans/factory/xml/spring-beans-2.5.xsd}
+17:11:58,902 main DEBUG PluggableSchemaResolver:118 - Found XML schema [http://www.springframework.org/schema/beans/spring-beans-2.5.xsd] in classpath: org/springframework/beans/factory/xml/spring-beans-2.5.xsd
+17:11:59,054 main DEBUG PluggableSchemaResolver:118 - Found XML schema [http://www.springframework.org/schema/tx/spring-tx.xsd] in classpath: org/springframework/transaction/config/spring-tx-3.1.xsd
+17:11:59,065 main DEBUG PluggableSchemaResolver:118 - Found XML schema [http://www.springframework.org/schema/tool/spring-tool-3.1.xsd] in classpath: org/springframework/beans/factory/xml/spring-tool-3.1.xsd
+17:11:59,092 main DEBUG DefaultBeanDefinitionDocumentReader:108 - Loading bean definitions
+17:11:59,143 main DEBUG BeanDefinitionParserDelegate:497 - Neither XML 'id' nor 'name' specified - using generated bean name [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0]
+17:11:59,159 main DEBUG BeanDefinitionParserDelegate:497 - Neither XML 'id' nor 'name' specified - using generated bean name [org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter#546b0add]
+17:11:59,159 main DEBUG BeanDefinitionParserDelegate:497 - Neither XML 'id' nor 'name' specified - using generated bean name [org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor#0]
+17:11:59,162 main DEBUG DefaultNamespaceHandlerResolver:156 - Loaded NamespaceHandler mappings: {http://www.springframework.org/schema/p=org.springframework.beans.factory.xml.SimplePropertyNamespaceHandler, http://www.springframework.org/schema/util=org.springframework.beans.factory.xml.UtilNamespaceHandler, http://www.springframework.org/schema/jee=org.springframework.ejb.config.JeeNamespaceHandler, http://www.springframework.org/schema/aop=org.springframework.aop.config.AopNamespaceHandler, http://cxf.apache.org/transports/http/configuration=org.apache.cxf.transport.http.spring.NamespaceHandler, http://www.springframework.org/schema/jdbc=org.springframework.jdbc.config.JdbcNamespaceHandler, http://www.springframework.org/schema/cache=org.springframework.cache.config.CacheNamespaceHandler, http://www.springframework.org/schema/c=org.springframework.beans.factory.xml.SimpleConstructorNamespaceHandler, http://cxf.apache.org/jaxrs=org.apache.cxf.jaxrs.spring.NamespaceHandler, http://www.springframework.org/schema/tx=org.springframework.transaction.config.TxNamespaceHandler, http://cxf.apache.org/core=org.apache.cxf.bus.spring.NamespaceHandler, http://www.springframework.org/schema/task=org.springframework.scheduling.config.TaskNamespaceHandler, http://www.springframework.org/schema/lang=org.springframework.scripting.config.LangNamespaceHandler, http://www.springframework.org/schema/context=org.springframework.context.config.ContextNamespaceHandler}
+17:11:59,223 main DEBUG XmlBeanDefinitionReader:216 - Loaded 10 bean definitions from location pattern [classpath:dao-config.xml]
+17:11:59,224 main  INFO XmlBeanDefinitionReader:315 - Loading XML bean definitions from class path resource [spring-config.xml]
+17:11:59,234 main DEBUG DefaultDocumentLoader:72 - Using JAXP provider [org.apache.xerces.jaxp.DocumentBuilderFactoryImpl]
+17:11:59,249 main DEBUG PluggableSchemaResolver:118 - Found XML schema [http://www.springframework.org/schema/beans/spring-beans-2.5.xsd] in classpath: org/springframework/beans/factory/xml/spring-beans-2.5.xsd
+17:11:59,304 main DEBUG PluggableSchemaResolver:118 - Found XML schema [http://www.springframework.org/schema/context/spring-context-2.5.xsd] in classpath: org/springframework/context/config/spring-context-2.5.xsd
+17:11:59,307 main DEBUG PluggableSchemaResolver:118 - Found XML schema [http://www.springframework.org/schema/tool/spring-tool-2.5.xsd] in classpath: org/springframework/beans/factory/xml/spring-tool-2.5.xsd
+17:11:59,339 main DEBUG PluggableSchemaResolver:118 - Found XML schema [http://cxf.apache.org/schemas/jaxrs.xsd] in classpath: schemas/jaxrs.xsd
+17:11:59,341 main DEBUG PluggableSchemaResolver:118 - Found XML schema [http://cxf.apache.org/schemas/configuration/cxf-beans.xsd] in classpath: schemas/configuration/cxf-beans.xsd
+17:11:59,388 main DEBUG PluggableSchemaResolver:118 - Found XML schema [http://cxf.apache.org/schemas/core.xsd] in classpath: schemas/core.xsd
+17:11:59,391 main DEBUG PluggableSchemaResolver:118 - Found XML schema [http://cxf.apache.org/schemas/configuration/parameterized-types.xsd] in classpath: schemas/configuration/parameterized-types.xsd
+17:11:59,399 main DEBUG DefaultBeanDefinitionDocumentReader:108 - Loading bean definitions
+17:11:59,443 main DEBUG StandardEnvironment:112 - Initializing new StandardEnvironment
+17:11:59,453 main DEBUG StandardEnvironment:107 - Adding [systemProperties] PropertySource with lowest search precedence
+17:11:59,453 main DEBUG StandardEnvironment:107 - Adding [systemEnvironment] PropertySource with lowest search precedence
+17:11:59,453 main DEBUG StandardEnvironment:116 - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+17:11:59,477 main  INFO ClassPathBeanDefinitionScanner:202 - JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+17:11:59,488 main  INFO ClassPathBeanDefinitionScanner:210 - JSR-330 'javax.inject.Named' annotation found and supported for component scanning
+17:11:59,521 main DEBUG PathMatchingResourcePatternResolver:464 - Looking for matching resources in jar file [file:/home/abdelrazik/Desktop/Task/library-test-project/eshta-library-ws/eshta-library-ws.ws-web/target/eshta-library-ws.ws-web-1.0-SNAPSHOT/WEB-INF/lib/eshta-library-ws.dao-1.0-SNAPSHOT.jar]
+17:11:59,522 main DEBUG PathMatchingResourcePatternResolver:464 - Looking for matching resources in jar file [file:/home/abdelrazik/Desktop/Task/library-test-project/eshta-library-ws/eshta-library-ws.ws-web/target/eshta-library-ws.ws-web-1.0-SNAPSHOT/WEB-INF/lib/eshta-library-ws.ws-service-api-1.0-SNAPSHOT.jar]
+17:11:59,523 main DEBUG PathMatchingResourcePatternResolver:464 - Looking for matching resources in jar file [file:/home/abdelrazik/Desktop/Task/library-test-project/eshta-library-ws/eshta-library-ws.ws-web/target/eshta-library-ws.ws-web-1.0-SNAPSHOT/WEB-INF/lib/eshta-library-ws.dao-impl-1.0-SNAPSHOT.jar]
+17:11:59,537 main DEBUG PathMatchingResourcePatternResolver:464 - Looking for matching resources in jar file [file:/home/abdelrazik/Desktop/Task/library-test-project/eshta-library-ws/eshta-library-ws.ws-web/target/eshta-library-ws.ws-web-1.0-SNAPSHOT/WEB-INF/lib/eshta-library-ws.dto-1.0-SNAPSHOT.jar]
+17:11:59,537 main DEBUG PathMatchingResourcePatternResolver:464 - Looking for matching resources in jar file [file:/home/abdelrazik/Desktop/Task/library-test-project/eshta-library-ws/eshta-library-ws.ws-web/target/eshta-library-ws.ws-web-1.0-SNAPSHOT/WEB-INF/lib/eshta-library-ws.domain-1.0-SNAPSHOT.jar]
+17:11:59,538 main DEBUG PathMatchingResourcePatternResolver:464 - Looking for matching resources in jar file [file:/home/abdelrazik/Desktop/Task/library-test-project/eshta-library-ws/eshta-library-ws.ws-web/target/eshta-library-ws.ws-web-1.0-SNAPSHOT/WEB-INF/lib/eshta-library-ws.ws-service-impl-1.0-SNAPSHOT.jar]
+17:11:59,540 main DEBUG PathMatchingResourcePatternResolver:464 - Looking for matching resources in jar file [file:/home/abdelrazik/Desktop/Task/library-test-project/eshta-library-ws/eshta-library-ws.ws-web/target/eshta-library-ws.ws-web-1.0-SNAPSHOT/WEB-INF/lib/eshta-library-ws.service-1.0-SNAPSHOT.jar]
+17:11:59,552 main DEBUG PathMatchingResourcePatternResolver:351 - Resolved location pattern [classpath*:com/siliconnile/library/**/*.class] to resources [URL [jar:file:/home/abdelrazik/Desktop/Task/library-test-project/eshta-library-ws/eshta-library-ws.ws-web/target/eshta-library-ws.ws-web-1.0-SNAPSHOT/WEB-INF/lib/eshta-library-ws.dao-1.0-SNAPSHOT.jar!/com/siliconnile/library/dao/BookDao.class], URL [jar:file:/home/abdelrazik/Desktop/Task/library-test-project/eshta-library-ws/eshta-library-ws.ws-web/target/eshta-library-ws.ws-web-1.0-SNAPSHOT/WEB-INF/lib/eshta-library-ws.dao-1.0-SNAPSHOT.jar!/com/siliconnile/library/dao/SampleObjectDao.class], URL [jar:file:/home/abdelrazik/Desktop/Task/library-test-project/eshta-library-ws/eshta-library-ws.ws-web/target/eshta-library-ws.ws-web-1.0-SNAPSHOT/WEB-INF/lib/eshta-library-ws.ws-service-api-1.0-SNAPSHOT.jar!/com/siliconnile/library/ws/service/api/BookWS.class], URL [jar:file:/home/abdelrazik/Desktop/Task/library-test-project/eshta-library-ws/eshta-library-ws.ws-web/target/eshta-library-ws.ws-web-1.0-SNAPSHOT/WEB-INF/lib/eshta-library-ws.ws-service-api-1.0-SNAPSHOT.jar!/com/siliconnile/library/ws/service/api/TestWebService.class], URL [jar:file:/home/abdelrazik/Desktop/Task/library-test-project/eshta-library-ws/eshta-library-ws.ws-web/target/eshta-library-ws.ws-web-1.0-SNAPSHOT/WEB-INF/lib/eshta-library-ws.dao-impl-1.0-SNAPSHOT.jar!/com/siliconnile/library/dao/impl/SampleObjectDaoImpl.class], URL [jar:file:/home/abdelrazik/Desktop/Task/library-test-project/eshta-library-ws/eshta-library-ws.ws-web/target/eshta-library-ws.ws-web-1.0-SNAPSHOT/WEB-INF/lib/eshta-library-ws.dao-impl-1.0-SNAPSHOT.jar!/com/siliconnile/library/dao/impl/BookDaoImpl.class], URL [jar:file:/home/abdelrazik/Desktop/Task/library-test-project/eshta-library-ws/eshta-library-ws.ws-web/target/eshta-library-ws.ws-web-1.0-SNAPSHOT/WEB-INF/lib/eshta-library-ws.dto-1.0-SNAPSHOT.jar!/com/siliconnile/library/dto/SampleObjectDTO.class], URL [jar:file:/home/abdelrazik/Desktop/Task/library-test-project/eshta-library-ws/eshta-library-ws.ws-web/target/eshta-library-ws.ws-web-1.0-SNAPSHOT/WEB-INF/lib/eshta-library-ws.dto-1.0-SNAPSHOT.jar!/com/siliconnile/library/dto/BookDTO.class], URL [jar:file:/home/abdelrazik/Desktop/Task/library-test-project/eshta-library-ws/eshta-library-ws.ws-web/target/eshta-library-ws.ws-web-1.0-SNAPSHOT/WEB-INF/lib/eshta-library-ws.domain-1.0-SNAPSHOT.jar!/com/siliconnile/library/domain/SampleObject.class], URL [jar:file:/home/abdelrazik/Desktop/Task/library-test-project/eshta-library-ws/eshta-library-ws.ws-web/target/eshta-library-ws.ws-web-1.0-SNAPSHOT/WEB-INF/lib/eshta-library-ws.domain-1.0-SNAPSHOT.jar!/com/siliconnile/library/domain/BookReader.class], URL [jar:file:/home/abdelrazik/Desktop/Task/library-test-project/eshta-library-ws/eshta-library-ws.ws-web/target/eshta-library-ws.ws-web-1.0-SNAPSHOT/WEB-INF/lib/eshta-library-ws.domain-1.0-SNAPSHOT.jar!/com/siliconnile/library/domain/Reader.class], URL [jar:file:/home/abdelrazik/Desktop/Task/library-test-project/eshta-library-ws/eshta-library-ws.ws-web/target/eshta-library-ws.ws-web-1.0-SNAPSHOT/WEB-INF/lib/eshta-library-ws.domain-1.0-SNAPSHOT.jar!/com/siliconnile/library/domain/Book.class], URL [jar:file:/home/abdelrazik/Desktop/Task/library-test-project/eshta-library-ws/eshta-library-ws.ws-web/target/eshta-library-ws.ws-web-1.0-SNAPSHOT/WEB-INF/lib/eshta-library-ws.ws-service-impl-1.0-SNAPSHOT.jar!/com/siliconnile/library/ws/service/impl/TestWebServiceImpl.class], URL [jar:file:/home/abdelrazik/Desktop/Task/library-test-project/eshta-library-ws/eshta-library-ws.ws-web/target/eshta-library-ws.ws-web-1.0-SNAPSHOT/WEB-INF/lib/eshta-library-ws.ws-service-impl-1.0-SNAPSHOT.jar!/com/siliconnile/library/ws/service/impl/BookWebServiceImpl.class], URL [jar:file:/home/abdelrazik/Desktop/Task/library-test-project/eshta-library-ws/eshta-library-ws.ws-web/target/eshta-library-ws.ws-web-1.0-SNAPSHOT/WEB-INF/lib/eshta-library-ws.ws-service-impl-1.0-SNAPSHOT.jar!/com/siliconnile/library/ws/service/impl/DTOconverter.class], URL [jar:file:/home/abdelrazik/Desktop/Task/library-test-project/eshta-library-ws/eshta-library-ws.ws-web/target/eshta-library-ws.ws-web-1.0-SNAPSHOT/WEB-INF/lib/eshta-library-ws.service-1.0-SNAPSHOT.jar!/com/siliconnile/library/service/impl/TestServiceImpl.class], URL [jar:file:/home/abdelrazik/Desktop/Task/library-test-project/eshta-library-ws/eshta-library-ws.ws-web/target/eshta-library-ws.ws-web-1.0-SNAPSHOT/WEB-INF/lib/eshta-library-ws.service-1.0-SNAPSHOT.jar!/com/siliconnile/library/service/impl/BookMaintenanceImpl.class], URL [jar:file:/home/abdelrazik/Desktop/Task/library-test-project/eshta-library-ws/eshta-library-ws.ws-web/target/eshta-library-ws.ws-web-1.0-SNAPSHOT/WEB-INF/lib/eshta-library-ws.service-1.0-SNAPSHOT.jar!/com/siliconnile/library/service/api/BookMaintenance.class], URL [jar:file:/home/abdelrazik/Desktop/Task/library-test-project/eshta-library-ws/eshta-library-ws.ws-web/target/eshta-library-ws.ws-web-1.0-SNAPSHOT/WEB-INF/lib/eshta-library-ws.service-1.0-SNAPSHOT.jar!/com/siliconnile/library/service/api/TestService.class]]
+17:11:59,657 main DEBUG ClassPathBeanDefinitionScanner:244 - Identified candidate component class: URL [jar:file:/home/abdelrazik/Desktop/Task/library-test-project/eshta-library-ws/eshta-library-ws.ws-web/target/eshta-library-ws.ws-web-1.0-SNAPSHOT/WEB-INF/lib/eshta-library-ws.dao-impl-1.0-SNAPSHOT.jar!/com/siliconnile/library/dao/impl/SampleObjectDaoImpl.class]
+17:11:59,658 main DEBUG ClassPathBeanDefinitionScanner:244 - Identified candidate component class: URL [jar:file:/home/abdelrazik/Desktop/Task/library-test-project/eshta-library-ws/eshta-library-ws.ws-web/target/eshta-library-ws.ws-web-1.0-SNAPSHOT/WEB-INF/lib/eshta-library-ws.dao-impl-1.0-SNAPSHOT.jar!/com/siliconnile/library/dao/impl/BookDaoImpl.class]
+17:11:59,723 main DEBUG ClassPathBeanDefinitionScanner:244 - Identified candidate component class: URL [jar:file:/home/abdelrazik/Desktop/Task/library-test-project/eshta-library-ws/eshta-library-ws.ws-web/target/eshta-library-ws.ws-web-1.0-SNAPSHOT/WEB-INF/lib/eshta-library-ws.ws-service-impl-1.0-SNAPSHOT.jar!/com/siliconnile/library/ws/service/impl/DTOconverter.class]
+17:11:59,733 main DEBUG ClassPathBeanDefinitionScanner:244 - Identified candidate component class: URL [jar:file:/home/abdelrazik/Desktop/Task/library-test-project/eshta-library-ws/eshta-library-ws.ws-web/target/eshta-library-ws.ws-web-1.0-SNAPSHOT/WEB-INF/lib/eshta-library-ws.service-1.0-SNAPSHOT.jar!/com/siliconnile/library/service/impl/TestServiceImpl.class]
+17:11:59,744 main DEBUG ClassPathBeanDefinitionScanner:244 - Identified candidate component class: URL [jar:file:/home/abdelrazik/Desktop/Task/library-test-project/eshta-library-ws/eshta-library-ws.ws-web/target/eshta-library-ws.ws-web-1.0-SNAPSHOT/WEB-INF/lib/eshta-library-ws.service-1.0-SNAPSHOT.jar!/com/siliconnile/library/service/impl/BookMaintenanceImpl.class]
+17:11:59,779 main  INFO XmlBeanDefinitionReader:315 - Loading XML bean definitions from class path resource [META-INF/cxf/cxf.xml]
+17:11:59,788 main DEBUG DefaultDocumentLoader:72 - Using JAXP provider [org.apache.xerces.jaxp.DocumentBuilderFactoryImpl]
+17:11:59,798 main DEBUG PluggableSchemaResolver:118 - Found XML schema [http://www.springframework.org/schema/beans/spring-beans.xsd] in classpath: org/springframework/beans/factory/xml/spring-beans-3.1.xsd
+17:11:59,868 main DEBUG DefaultBeanDefinitionDocumentReader:108 - Loading bean definitions
+17:11:59,869 main DEBUG XmlBeanDefinitionReader:216 - Loaded 4 bean definitions from location pattern [classpath:META-INF/cxf/cxf.xml]
+17:11:59,870 main DEBUG DefaultBeanDefinitionDocumentReader:241 - Imported 4 bean definitions from URL location [classpath:META-INF/cxf/cxf.xml]
+17:12:00,139 main DEBUG BeanDefinitionParserDelegate:497 - Neither XML 'id' nor 'name' specified - using generated bean name [com.siliconnile.library.ws.service.impl.BookWebServiceImpl#5381129e]
+17:12:00,140 main DEBUG BeanDefinitionParserDelegate:497 - Neither XML 'id' nor 'name' specified - using generated bean name [org.codehaus.jackson.jaxrs.JacksonJaxbJsonProvider#3eed6de6]
+17:12:00,164 main DEBUG BeanDefinitionParserDelegate:1485 - Using generated bean name [cxf:logging#21d3b6e9] for nested custom element 'cxf:logging'
+17:12:00,172 main DEBUG XmlBeanDefinitionReader:216 - Loaded 15 bean definitions from location pattern [classpath:spring-config.xml]
+17:12:00,173 main DEBUG XmlWebApplicationContext:533 - Bean factory for Root WebApplicationContext: org.springframework.beans.factory.support.DefaultListableBeanFactory@528d8c58: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,dataSource,entityManagerFactory,org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor#0,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,jpaTemplate,sampleObjectDaoImpl,bookDaoImpl,DTOconverter,testServiceImpl,bookMaintenanceImpl,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,cxf,org.apache.cxf.bus.spring.BusWiringBeanFactoryPostProcessor,org.apache.cxf.bus.spring.Jsr250BeanPostProcessor,org.apache.cxf.bus.spring.BusExtensionPostProcessor,restContainer]; root of factory hierarchy
+17:12:00,250 main DEBUG DefaultListableBeanFactory:217 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+17:12:00,251 main DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+17:12:00,293 main DEBUG DefaultListableBeanFactory:504 - Eagerly caching bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor' to allow for resolving potential circular references
+17:12:00,298 main DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+17:12:00,457 main DEBUG DefaultListableBeanFactory:217 - Creating shared instance of singleton bean 'org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0'
+17:12:00,458 main DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0'
+17:12:00,466 main DEBUG DefaultListableBeanFactory:504 - Eagerly caching bean 'org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0' to allow for resolving potential circular references
+17:12:00,550 main DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0'
+17:12:00,551 main  INFO PropertyPlaceholderConfigurer:177 - Loading properties file from class path resource [db.properties]
+17:12:00,566 main DEBUG DefaultListableBeanFactory:217 - Creating shared instance of singleton bean 'org.apache.cxf.bus.spring.BusWiringBeanFactoryPostProcessor'
+17:12:00,567 main DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'org.apache.cxf.bus.spring.BusWiringBeanFactoryPostProcessor'
+17:12:00,567 main DEBUG DefaultListableBeanFactory:504 - Eagerly caching bean 'org.apache.cxf.bus.spring.BusWiringBeanFactoryPostProcessor' to allow for resolving potential circular references
+17:12:00,568 main DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'org.apache.cxf.bus.spring.BusWiringBeanFactoryPostProcessor'
+17:12:00,569 main DEBUG DefaultListableBeanFactory:217 - Creating shared instance of singleton bean 'org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor#0'
+17:12:00,570 main DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor#0'
+17:12:00,570 main DEBUG DefaultListableBeanFactory:504 - Eagerly caching bean 'org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor#0' to allow for resolving potential circular references
+17:12:00,582 main DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor#0'
+17:12:00,583 main DEBUG DefaultListableBeanFactory:217 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+17:12:00,583 main DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+17:12:00,584 main  INFO AutowiredAnnotationBeanPostProcessor:139 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+17:12:00,586 main DEBUG DefaultListableBeanFactory:504 - Eagerly caching bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor' to allow for resolving potential circular references
+17:12:00,587 main DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+17:12:00,587 main DEBUG DefaultListableBeanFactory:217 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+17:12:00,587 main DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+17:12:00,594 main DEBUG DefaultListableBeanFactory:504 - Eagerly caching bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor' to allow for resolving potential circular references
+17:12:00,594 main DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+17:12:00,595 main DEBUG DefaultListableBeanFactory:217 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+17:12:00,595 main DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+17:12:00,600 main DEBUG DefaultListableBeanFactory:504 - Eagerly caching bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor' to allow for resolving potential circular references
+17:12:00,601 main DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+17:12:00,609 main DEBUG DefaultListableBeanFactory:217 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+17:12:00,610 main DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+17:12:00,610 main DEBUG DefaultListableBeanFactory:504 - Eagerly caching bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor' to allow for resolving potential circular references
+17:12:00,610 main DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+17:12:00,610 main DEBUG DefaultListableBeanFactory:217 - Creating shared instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+17:12:00,611 main DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+17:12:00,619 main DEBUG DefaultListableBeanFactory:504 - Eagerly caching bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor' to allow for resolving potential circular references
+17:12:00,620 main DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+17:12:00,620 main DEBUG DefaultListableBeanFactory:217 - Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+17:12:00,621 main DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'org.springframework.aop.config.internalAutoProxyCreator'
+17:12:00,646 main DEBUG DefaultListableBeanFactory:504 - Eagerly caching bean 'org.springframework.aop.config.internalAutoProxyCreator' to allow for resolving potential circular references
+17:12:00,694 main DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'org.springframework.aop.config.internalAutoProxyCreator'
+17:12:00,695 main DEBUG DefaultListableBeanFactory:217 - Creating shared instance of singleton bean 'org.apache.cxf.bus.spring.Jsr250BeanPostProcessor'
+17:12:00,695 main DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'org.apache.cxf.bus.spring.Jsr250BeanPostProcessor'
+17:12:00,696 main DEBUG DefaultListableBeanFactory:504 - Eagerly caching bean 'org.apache.cxf.bus.spring.Jsr250BeanPostProcessor' to allow for resolving potential circular references
+17:12:00,722 main DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'org.apache.cxf.bus.spring.Jsr250BeanPostProcessor'
+17:12:00,723 main DEBUG DefaultListableBeanFactory:217 - Creating shared instance of singleton bean 'org.apache.cxf.bus.spring.BusExtensionPostProcessor'
+17:12:00,723 main DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'org.apache.cxf.bus.spring.BusExtensionPostProcessor'
+17:12:00,724 main DEBUG DefaultListableBeanFactory:504 - Eagerly caching bean 'org.apache.cxf.bus.spring.BusExtensionPostProcessor' to allow for resolving potential circular references
+17:12:00,745 main DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'org.apache.cxf.bus.spring.BusExtensionPostProcessor'
+17:12:00,746 main DEBUG XmlWebApplicationContext:800 - Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@4c22980e]
+17:12:00,754 main DEBUG XmlWebApplicationContext:824 - Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@19825bf4]
+17:12:00,755 main DEBUG UiApplicationContextUtils:85 - Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.ResourceBundleThemeSource@4d738073]
+17:12:00,766 main DEBUG DefaultListableBeanFactory:217 - Creating shared instance of singleton bean 'entityManagerFactory'
+17:12:00,772 main DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'entityManagerFactory'
+17:12:00,809 main DEBUG DefaultListableBeanFactory:504 - Eagerly caching bean 'entityManagerFactory' to allow for resolving potential circular references
+17:12:00,880 main DEBUG DefaultListableBeanFactory:217 - Creating shared instance of singleton bean 'dataSource'
+17:12:00,881 main DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'dataSource'
+17:12:00,901 main DEBUG DefaultListableBeanFactory:504 - Eagerly caching bean 'dataSource' to allow for resolving potential circular references
+17:12:00,985 main DEBUG DefaultListableBeanFactory:217 - Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+17:12:00,985 main DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+17:12:00,987 main DEBUG DefaultListableBeanFactory:504 - Eagerly caching bean 'org.springframework.transaction.config.internalTransactionAdvisor' to allow for resolving potential circular references
+17:12:01,017 main DEBUG DefaultListableBeanFactory:217 - Creating shared instance of singleton bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0'
+17:12:01,024 main DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0'
+17:12:01,034 main DEBUG DefaultListableBeanFactory:504 - Eagerly caching bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0' to allow for resolving potential circular references
+17:12:01,050 main DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0'
+17:12:01,053 main DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+17:12:01,059 main DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'dataSource'
+17:12:01,069 main DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter#546b0add'
+17:12:01,107 main DEBUG StandardEnvironment:112 - Initializing new StandardEnvironment
+17:12:01,114 main DEBUG StandardEnvironment:107 - Adding [systemProperties] PropertySource with lowest search precedence
+17:12:01,115 main DEBUG StandardEnvironment:107 - Adding [systemEnvironment] PropertySource with lowest search precedence
+17:12:01,115 main DEBUG StandardEnvironment:116 - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+17:12:01,116 main DEBUG StandardEnvironment:112 - Initializing new StandardEnvironment
+17:12:01,122 main DEBUG StandardEnvironment:107 - Adding [systemProperties] PropertySource with lowest search precedence
+17:12:01,123 main DEBUG StandardEnvironment:107 - Adding [systemEnvironment] PropertySource with lowest search precedence
+17:12:01,123 main DEBUG StandardEnvironment:116 - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+17:12:01,124 main DEBUG StandardEnvironment:112 - Initializing new StandardEnvironment
+17:12:01,126 main DEBUG StandardEnvironment:107 - Adding [systemProperties] PropertySource with lowest search precedence
+17:12:01,126 main DEBUG StandardEnvironment:107 - Adding [systemEnvironment] PropertySource with lowest search precedence
+17:12:01,127 main DEBUG StandardEnvironment:116 - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+17:12:01,135 main DEBUG StandardEnvironment:112 - Initializing new StandardEnvironment
+17:12:01,135 main DEBUG StandardEnvironment:107 - Adding [systemProperties] PropertySource with lowest search precedence
+17:12:01,136 main DEBUG StandardEnvironment:107 - Adding [systemEnvironment] PropertySource with lowest search precedence
+17:12:01,143 main DEBUG StandardEnvironment:116 - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+17:12:01,144 main DEBUG StandardEnvironment:112 - Initializing new StandardEnvironment
+17:12:01,144 main DEBUG StandardEnvironment:107 - Adding [systemProperties] PropertySource with lowest search precedence
+17:12:01,145 main DEBUG StandardEnvironment:107 - Adding [systemEnvironment] PropertySource with lowest search precedence
+17:12:01,147 main DEBUG StandardEnvironment:116 - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+17:12:01,164 main DEBUG DefaultListableBeanFactory:245 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+17:12:01,165 main DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter#546b0add'
+17:12:01,166 main DEBUG DefaultListableBeanFactory:1498 - Invoking afterPropertiesSet() on bean with name 'entityManagerFactory'
+17:12:01,192 main  INFO LocalContainerEntityManagerFactoryBean:283 - Building JPA container EntityManagerFactory for persistence unit 'testPU'
+17:12:01,273 main  INFO Environment:514 - Hibernate 3.2.6
+17:12:01,285 main  INFO Environment:547 - hibernate.properties not found
+17:12:01,286 main  INFO Environment:681 - Bytecode provider name : cglib
+17:12:01,299 main  INFO Environment:598 - using JDK 1.4 java.sql.Timestamp handling
+17:12:02,138 main DEBUG Configuration:1126 - processing extends queue
+17:12:02,142 main DEBUG Configuration:1130 - processing collection mappings
+17:12:02,142 main DEBUG CollectionSecondPass:41 - Second pass for collection: com.siliconnile.library.domain.Book.bookReader
+17:12:02,147 main DEBUG CollectionSecondPass:57 - Mapped collection key: book_id, one-to-many: com.siliconnile.library.domain.BookReader
+17:12:02,149 main DEBUG CollectionSecondPass:41 - Second pass for collection: com.siliconnile.library.domain.Reader.bookReader
+17:12:02,150 main DEBUG CollectionSecondPass:57 - Mapped collection key: reader_id, one-to-many: com.siliconnile.library.domain.BookReader
+17:12:02,153 main DEBUG Configuration:1141 - processing native query and ResultSetMapping mappings
+17:12:02,153 main DEBUG Configuration:1149 - processing association property references
+17:12:02,154 main DEBUG Configuration:1171 - processing foreign key constraints
+17:12:02,154 main DEBUG Configuration:1254 - resolving reference to class: com.siliconnile.library.domain.Book
+17:12:02,156 main DEBUG Configuration:1254 - resolving reference to class: com.siliconnile.library.domain.Reader
+17:12:02,248 main DEBUG Configuration:1291 - Preparing to build session factory with filters : {}
+17:12:02,249 main DEBUG Configuration:1126 - processing extends queue
+17:12:02,249 main DEBUG Configuration:1130 - processing collection mappings
+17:12:02,249 main DEBUG Configuration:1141 - processing native query and ResultSetMapping mappings
+17:12:02,249 main DEBUG Configuration:1149 - processing association property references
+17:12:02,249 main DEBUG Configuration:1171 - processing foreign key constraints
+17:12:02,250 main DEBUG Configuration:1254 - resolving reference to class: com.siliconnile.library.domain.Book
+17:12:02,250 main DEBUG Configuration:1254 - resolving reference to class: com.siliconnile.library.domain.Reader
+17:12:02,264 main  INFO ConnectionProviderFactory:72 - Initializing connection provider: org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider
+17:12:02,428 main  INFO SettingsFactory:89 - RDBMS: PostgreSQL, version: 9.2.6
+17:12:02,428 main  INFO SettingsFactory:90 - JDBC driver: PostgreSQL Native Driver, version: PostgreSQL 9.0 JDBC4 (build 801)
+17:12:02,437 main  INFO Dialect:152 - Using dialect: org.hibernate.dialect.PostgreSQLDialect
+17:12:02,443 main  INFO TransactionFactoryFactory:34 - Transaction strategy: org.hibernate.transaction.JDBCTransactionFactory
+17:12:02,445 main  INFO TransactionManagerLookupFactory:33 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+17:12:02,446 main  INFO SettingsFactory:143 - Automatic flush during beforeCompletion(): disabled
+17:12:02,446 main  INFO SettingsFactory:147 - Automatic session close at end of transaction: disabled
+17:12:02,446 main  INFO SettingsFactory:154 - JDBC batch size: 15
+17:12:02,447 main  INFO SettingsFactory:157 - JDBC batch updates for versioned data: disabled
+17:12:02,447 main  INFO SettingsFactory:162 - Scrollable result sets: enabled
+17:12:02,450 main DEBUG SettingsFactory:166 - Wrap result sets: disabled
+17:12:02,450 main  INFO SettingsFactory:170 - JDBC3 getGeneratedKeys(): enabled
+17:12:02,450 main  INFO SettingsFactory:178 - Connection release mode: auto
+17:12:02,451 main  INFO SettingsFactory:205 - Default batch fetch size: 1
+17:12:02,451 main  INFO SettingsFactory:209 - Generate SQL with comments: disabled
+17:12:02,451 main  INFO SettingsFactory:213 - Order SQL updates by primary key: disabled
+17:12:02,451 main  INFO SettingsFactory:217 - Order SQL inserts for batching: disabled
+17:12:02,452 main  INFO SettingsFactory:386 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+17:12:02,458 main  INFO ASTQueryTranslatorFactory:24 - Using ASTQueryTranslatorFactory
+17:12:02,466 main  INFO SettingsFactory:225 - Query language substitutions: {}
+17:12:02,467 main  INFO SettingsFactory:230 - JPA-QL strict compliance: enabled
+17:12:02,467 main  INFO SettingsFactory:235 - Second-level cache: enabled
+17:12:02,467 main  INFO SettingsFactory:239 - Query cache: disabled
+17:12:02,467 main  INFO SettingsFactory:373 - Cache provider: org.hibernate.cache.HashtableCacheProvider
+17:12:02,468 main  INFO SettingsFactory:254 - Optimize cache for minimal puts: disabled
+17:12:02,468 main  INFO SettingsFactory:263 - Structured second-level cache entries: disabled
+17:12:02,476 main  INFO SettingsFactory:290 - Statistics: disabled
+17:12:02,480 main  INFO SettingsFactory:294 - Deleted entity synthetic identifier rollback: disabled
+17:12:02,481 main  INFO SettingsFactory:309 - Default entity-mode: pojo
+17:12:02,481 main  INFO SettingsFactory:313 - Named query checking : enabled
+17:12:02,612 main  INFO SessionFactoryImpl:161 - building session factory
+17:12:02,613 main DEBUG SessionFactoryImpl:173 - Session factory constructed with filter configurations : {}
+17:12:02,613 main DEBUG SessionFactoryImpl:177 - instantiating session factory with properties: {java.runtime.name=OpenJDK Runtime Environment, hibernate.cache.provider_class=org.hibernate.cache.HashtableCacheProvider, sun.boot.library.path=/usr/lib/jvm/java-1.6.0-openjdk-1.6.0.0.x86_64/jre/lib/amd64, java.vm.version=20.0-b12, java.vm.vendor=Sun Microsystems Inc., java.vendor.url=http://java.sun.com/, path.separator=:, guice.disable.misplaced.annotation.check=true, java.vm.name=OpenJDK 64-Bit Server VM, file.encoding.pkg=sun.io, user.country=US, sun.java.launcher=SUN_STANDARD, sun.os.patch.level=unknown, java.vm.specification.name=Java Virtual Machine Specification, user.dir=/home/abdelrazik/Desktop/Task/library-test-project/eshta-library-ws, java.runtime.version=1.6.0_24-b24, hibernate.ejb.discard_pc_on_close=false, java.awt.graphicsenv=sun.awt.X11GraphicsEnvironment, java.endorsed.dirs=/usr/lib/jvm/java-1.6.0-openjdk-1.6.0.0.x86_64/jre/lib/endorsed, os.arch=amd64, hibernate.connection.autocommit=true, java.io.tmpdir=/tmp, webapp.root=/home/abdelrazik/Desktop/Task/library-test-project/eshta-library-ws/eshta-library-ws.ws-web/target/eshta-library-ws.ws-web-1.0-SNAPSHOT, line.separator=
+, java.vm.specification.vendor=Sun Microsystems Inc., os.name=Linux, classworlds.conf=/usr/local/maven/bin/m2.conf, sun.jnu.encoding=UTF-8, java.library.path=/usr/lib/jvm/java-1.6.0-openjdk-1.6.0.0.x86_64/jre/lib/amd64/server:/usr/lib/jvm/java-1.6.0-openjdk-1.6.0.0.x86_64/jre/lib/amd64:/usr/lib/jvm/java-1.6.0-openjdk-1.6.0.0.x86_64/jre/../lib/amd64:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib, java.specification.name=Java Platform API Specification, java.class.version=50.0, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, hibernate.transaction.factory_class=org.hibernate.transaction.JDBCTransactionFactory, hibernate.query.factory_class=org.hibernate.hql.ast.ASTQueryTranslatorFactory, os.version=2.6.32-279.el6.x86_64, user.home=/home/abdelrazik, user.timezone=Europe/Bucharest, java.awt.printerjob=sun.print.PSPrinterJob, hibernate.connection.release_mode=auto, java.specification.version=1.6, file.encoding=UTF-8, user.name=abdelrazik, java.class.path=/usr/local/maven/boot/plexus-classworlds-2.4.jar, hibernate.bytecode.use_reflection_optimizer=false, hibernate.show_sql=false, hibernate.use_identifier_rollback=false, java.vm.specification.version=1.0, sun.arch.data.model=64, java.home=/usr/lib/jvm/java-1.6.0-openjdk-1.6.0.0.x86_64/jre, sun.java.command=org.codehaus.plexus.classworlds.launcher.Launcher jetty:run, hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect, java.specification.vendor=Sun Microsystems Inc., user.language=en, java.vm.info=mixed mode, java.version=1.6.0_24, hibernate.transaction.flush_before_completion=false, java.ext.dirs=/usr/lib/jvm/java-1.6.0-openjdk-1.6.0.0.x86_64/jre/lib/ext:/usr/java/packages/lib/ext, securerandom.source=file:/dev/./urandom, sun.boot.class.path=/usr/lib/jvm/java-1.6.0-openjdk-1.6.0.0.x86_64/jre/lib/resources.jar:/usr/lib/jvm/java-1.6.0-openjdk-1.6.0.0.x86_64/jre/lib/rt.jar:/usr/lib/jvm/java-1.6.0-openjdk-1.6.0.0.x86_64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-1.6.0-openjdk-1.6.0.0.x86_64/jre/lib/jsse.jar:/usr/lib/jvm/java-1.6.0-openjdk-1.6.0.0.x86_64/jre/lib/jce.jar:/usr/lib/jvm/java-1.6.0-openjdk-1.6.0.0.x86_64/jre/lib/charsets.jar:/usr/lib/jvm/java-1.6.0-openjdk-1.6.0.0.x86_64/jre/lib/netx.jar:/usr/lib/jvm/java-1.6.0-openjdk-1.6.0.0.x86_64/jre/lib/plugin.jar:/usr/lib/jvm/java-1.6.0-openjdk-1.6.0.0.x86_64/jre/lib/rhino.jar:/usr/lib/jvm/java-1.6.0-openjdk-1.6.0.0.x86_64/jre/lib/modules/jdk.boot.jar:/usr/lib/jvm/java-1.6.0-openjdk-1.6.0.0.x86_64/jre/classes, java.vendor=Sun Microsystems Inc., maven.home=/usr/local/maven, file.separator=/, java.vendor.url.bug=http://java.sun.com/cgi-bin/bugreport.cgi, hibernate.connection.provider_class=org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider, sun.cpu.endian=little, sun.io.unicode.encoding=UnicodeLittle, hibernate.query.jpaql_strict_compliance=true, sun.desktop=gnome, sun.cpu.isalist=}
+17:12:02,876 main DEBUG AbstractEntityPersister:2743 - Static SQL for entity: com.siliconnile.library.domain.BookReader
+17:12:02,877 main DEBUG AbstractEntityPersister:2748 -  Version select: select id from book_reader where id =?
+17:12:02,877 main DEBUG AbstractEntityPersister:2751 -  Snapshot select: select bookreader_.id, bookreader_.book_id as book2_2_, bookreader_.reader_id as reader3_2_ from book_reader bookreader_ where bookreader_.id=?
+17:12:02,877 main DEBUG AbstractEntityPersister:2754 -  Insert 0: insert into book_reader (book_id, reader_id, id) values (?, ?, ?)
+17:12:02,877 main DEBUG AbstractEntityPersister:2755 -  Update 0: update book_reader set book_id=?, reader_id=? where id=?
+17:12:02,877 main DEBUG AbstractEntityPersister:2756 -  Delete 0: delete from book_reader where id=?
+17:12:02,878 main DEBUG AbstractEntityPersister:2760 -  Identity insert: insert into book_reader (book_id, reader_id) values (?, ?)
+17:12:02,886 main DEBUG AbstractEntityPersister:2743 - Static SQL for entity: com.siliconnile.library.domain.Book
+17:12:02,888 main DEBUG AbstractEntityPersister:2748 -  Version select: select id from book where id =?
+17:12:02,888 main DEBUG AbstractEntityPersister:2751 -  Snapshot select: select book_.id, book_.author as author0_, book_.isbn as isbn0_, book_.picture_url as picture4_0_, book_.title as title0_ from book book_ where book_.id=?
+17:12:02,888 main DEBUG AbstractEntityPersister:2754 -  Insert 0: insert into book (author, isbn, picture_url, title, id) values (?, ?, ?, ?, ?)
+17:12:02,888 main DEBUG AbstractEntityPersister:2755 -  Update 0: update book set author=?, isbn=?, picture_url=?, title=? where id=?
+17:12:02,891 main DEBUG AbstractEntityPersister:2756 -  Delete 0: delete from book where id=?
+17:12:02,891 main DEBUG AbstractEntityPersister:2760 -  Identity insert: insert into book (author, isbn, picture_url, title) values (?, ?, ?, ?)
+17:12:02,894 main DEBUG AbstractEntityPersister:2743 - Static SQL for entity: com.siliconnile.library.domain.Reader
+17:12:02,895 main DEBUG AbstractEntityPersister:2748 -  Version select: select id from reader where id =?
+17:12:02,895 main DEBUG AbstractEntityPersister:2751 -  Snapshot select: select reader_.id, reader_.regdate as regdate1_, reader_.name as name1_ from reader reader_ where reader_.id=?
+17:12:02,895 main DEBUG AbstractEntityPersister:2754 -  Insert 0: insert into reader (regdate, name, id) values (?, ?, ?)
+17:12:02,895 main DEBUG AbstractEntityPersister:2755 -  Update 0: update reader set regdate=?, name=? where id=?
+17:12:02,896 main DEBUG AbstractEntityPersister:2756 -  Delete 0: delete from reader where id=?
+17:12:02,896 main DEBUG AbstractEntityPersister:2760 -  Identity insert: insert into reader (regdate, name) values (?, ?)
+17:12:02,899 main DEBUG AbstractCollectionPersister:548 - Static SQL for collection: com.siliconnile.library.domain.Reader.bookReader
+17:12:02,899 main DEBUG AbstractCollectionPersister:550 -  Row insert: update book_reader set reader_id=? where id=?
+17:12:02,899 main DEBUG AbstractCollectionPersister:556 -  Row delete: update book_reader set reader_id=null where reader_id=? and id=?
+17:12:02,899 main DEBUG AbstractCollectionPersister:559 -  One-shot delete: update book_reader set reader_id=null where reader_id=?
+17:12:02,899 main DEBUG AbstractCollectionPersister:548 - Static SQL for collection: com.siliconnile.library.domain.Book.bookReader
+17:12:02,900 main DEBUG AbstractCollectionPersister:550 -  Row insert: update book_reader set book_id=? where id=?
+17:12:02,900 main DEBUG AbstractCollectionPersister:556 -  Row delete: update book_reader set book_id=null where book_id=? and id=?
+17:12:02,900 main DEBUG AbstractCollectionPersister:559 -  One-shot delete: update book_reader set book_id=null where book_id=?
+17:12:02,917 main DEBUG EntityLoader:79 - Static select for entity com.siliconnile.library.domain.BookReader: select bookreader0_.id as id2_0_, bookreader0_.book_id as book2_2_0_, bookreader0_.reader_id as reader3_2_0_ from book_reader bookreader0_ where bookreader0_.id=?
+17:12:02,918 main DEBUG EntityLoader:79 - Static select for entity com.siliconnile.library.domain.BookReader: select bookreader0_.id as id2_0_, bookreader0_.book_id as book2_2_0_, bookreader0_.reader_id as reader3_2_0_ from book_reader bookreader0_ where bookreader0_.id=?
+17:12:02,918 main DEBUG EntityLoader:79 - Static select for entity com.siliconnile.library.domain.BookReader: select bookreader0_.id as id2_0_, bookreader0_.book_id as book2_2_0_, bookreader0_.reader_id as reader3_2_0_ from book_reader bookreader0_ where bookreader0_.id=? for update
+17:12:02,922 main DEBUG EntityLoader:79 - Static select for entity com.siliconnile.library.domain.BookReader: select bookreader0_.id as id2_0_, bookreader0_.book_id as book2_2_0_, bookreader0_.reader_id as reader3_2_0_ from book_reader bookreader0_ where bookreader0_.id=? for update
+17:12:02,922 main DEBUG EntityLoader:79 - Static select for entity com.siliconnile.library.domain.BookReader: select bookreader0_.id as id2_0_, bookreader0_.book_id as book2_2_0_, bookreader0_.reader_id as reader3_2_0_ from book_reader bookreader0_ where bookreader0_.id=? for update
+17:12:02,925 main DEBUG EntityLoader:34 - Static select for action ACTION_MERGE on entity com.siliconnile.library.domain.BookReader: select bookreader0_.id as id2_0_, bookreader0_.book_id as book2_2_0_, bookreader0_.reader_id as reader3_2_0_ from book_reader bookreader0_ where bookreader0_.id=?
+17:12:02,928 main DEBUG EntityLoader:34 - Static select for action ACTION_REFRESH on entity com.siliconnile.library.domain.BookReader: select bookreader0_.id as id2_0_, bookreader0_.book_id as book2_2_0_, bookreader0_.reader_id as reader3_2_0_ from book_reader bookreader0_ where bookreader0_.id=?
+17:12:02,929 main DEBUG EntityLoader:79 - Static select for entity com.siliconnile.library.domain.Book: select book0_.id as id0_0_, book0_.author as author0_0_, book0_.isbn as isbn0_0_, book0_.picture_url as picture4_0_0_, book0_.title as title0_0_ from book book0_ where book0_.id=?
+17:12:02,929 main DEBUG EntityLoader:79 - Static select for entity com.siliconnile.library.domain.Book: select book0_.id as id0_0_, book0_.author as author0_0_, book0_.isbn as isbn0_0_, book0_.picture_url as picture4_0_0_, book0_.title as title0_0_ from book book0_ where book0_.id=?
+17:12:02,929 main DEBUG EntityLoader:79 - Static select for entity com.siliconnile.library.domain.Book: select book0_.id as id0_0_, book0_.author as author0_0_, book0_.isbn as isbn0_0_, book0_.picture_url as picture4_0_0_, book0_.title as title0_0_ from book book0_ where book0_.id=? for update
+17:12:02,929 main DEBUG EntityLoader:79 - Static select for entity com.siliconnile.library.domain.Book: select book0_.id as id0_0_, book0_.author as author0_0_, book0_.isbn as isbn0_0_, book0_.picture_url as picture4_0_0_, book0_.title as title0_0_ from book book0_ where book0_.id=? for update
+17:12:02,929 main DEBUG EntityLoader:79 - Static select for entity com.siliconnile.library.domain.Book: select book0_.id as id0_0_, book0_.author as author0_0_, book0_.isbn as isbn0_0_, book0_.picture_url as picture4_0_0_, book0_.title as title0_0_ from book book0_ where book0_.id=? for update
+17:12:02,930 main DEBUG EntityLoader:34 - Static select for action ACTION_MERGE on entity com.siliconnile.library.domain.Book: select book0_.id as id0_0_, book0_.author as author0_0_, book0_.isbn as isbn0_0_, book0_.picture_url as picture4_0_0_, book0_.title as title0_0_ from book book0_ where book0_.id=?
+17:12:02,930 main DEBUG EntityLoader:34 - Static select for action ACTION_REFRESH on entity com.siliconnile.library.domain.Book: select book0_.id as id0_0_, book0_.author as author0_0_, book0_.isbn as isbn0_0_, book0_.picture_url as picture4_0_0_, book0_.title as title0_0_ from book book0_ where book0_.id=?
+17:12:02,934 main DEBUG EntityLoader:79 - Static select for entity com.siliconnile.library.domain.Reader: select reader0_.id as id1_0_, reader0_.regdate as regdate1_0_, reader0_.name as name1_0_ from reader reader0_ where reader0_.id=?
+17:12:02,934 main DEBUG EntityLoader:79 - Static select for entity com.siliconnile.library.domain.Reader: select reader0_.id as id1_0_, reader0_.regdate as regdate1_0_, reader0_.name as name1_0_ from reader reader0_ where reader0_.id=?
+17:12:02,934 main DEBUG EntityLoader:79 - Static select for entity com.siliconnile.library.domain.Reader: select reader0_.id as id1_0_, reader0_.regdate as regdate1_0_, reader0_.name as name1_0_ from reader reader0_ where reader0_.id=? for update
+17:12:02,934 main DEBUG EntityLoader:79 - Static select for entity com.siliconnile.library.domain.Reader: select reader0_.id as id1_0_, reader0_.regdate as regdate1_0_, reader0_.name as name1_0_ from reader reader0_ where reader0_.id=? for update
+17:12:02,935 main DEBUG EntityLoader:79 - Static select for entity com.siliconnile.library.domain.Reader: select reader0_.id as id1_0_, reader0_.regdate as regdate1_0_, reader0_.name as name1_0_ from reader reader0_ where reader0_.id=? for update
+17:12:02,935 main DEBUG EntityLoader:34 - Static select for action ACTION_MERGE on entity com.siliconnile.library.domain.Reader: select reader0_.id as id1_0_, reader0_.regdate as regdate1_0_, reader0_.name as name1_0_ from reader reader0_ where reader0_.id=?
+17:12:02,935 main DEBUG EntityLoader:34 - Static select for action ACTION_REFRESH on entity com.siliconnile.library.domain.Reader: select reader0_.id as id1_0_, reader0_.regdate as regdate1_0_, reader0_.name as name1_0_ from reader reader0_ where reader0_.id=?
+17:12:02,940 main DEBUG OneToManyLoader:64 - Static select for one-to-many com.siliconnile.library.domain.Reader.bookReader: select bookreader0_.reader_id as reader3_1_, bookreader0_.id as id1_, bookreader0_.id as id2_0_, bookreader0_.book_id as book2_2_0_, bookreader0_.reader_id as reader3_2_0_ from book_reader bookreader0_ where bookreader0_.reader_id=?
+17:12:02,941 main DEBUG OneToManyLoader:64 - Static select for one-to-many com.siliconnile.library.domain.Book.bookReader: select bookreader0_.book_id as book2_1_, bookreader0_.id as id1_, bookreader0_.id as id2_0_, bookreader0_.book_id as book2_2_0_, bookreader0_.reader_id as reader3_2_0_ from book_reader bookreader0_ where bookreader0_.book_id=?
+17:12:02,944 main DEBUG SessionFactoryObjectFactory:39 - initializing class SessionFactoryObjectFactory
+17:12:02,945 main DEBUG SessionFactoryObjectFactory:76 - registered: 4028834145dc2d390145dc2d3afd0000 (unnamed)
+17:12:02,945 main  INFO SessionFactoryObjectFactory:82 - Not binding factory to JNDI, no JNDI name configured
+17:12:02,945 main DEBUG SessionFactoryImpl:308 - instantiated session factory
+17:12:02,946 main DEBUG SessionFactoryImpl:392 - Checking 0 named HQL queries
+17:12:02,946 main DEBUG SessionFactoryImpl:412 - Checking 0 named SQL queries
+17:12:02,948 main DEBUG DefaultListableBeanFactory:245 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+17:12:02,952 main DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'entityManagerFactory'
+17:12:02,953 main  INFO DefaultListableBeanFactory:577 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@528d8c58: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,dataSource,entityManagerFactory,org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor#0,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,jpaTemplate,sampleObjectDaoImpl,bookDaoImpl,DTOconverter,testServiceImpl,bookMaintenanceImpl,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,cxf,org.apache.cxf.bus.spring.BusWiringBeanFactoryPostProcessor,org.apache.cxf.bus.spring.Jsr250BeanPostProcessor,org.apache.cxf.bus.spring.BusExtensionPostProcessor,restContainer,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+17:12:02,953 main DEBUG DefaultListableBeanFactory:245 - Returning cached instance of singleton bean 'org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0'
+17:12:02,953 main DEBUG DefaultListableBeanFactory:245 - Returning cached instance of singleton bean 'dataSource'
+17:12:02,953 main DEBUG DefaultListableBeanFactory:245 - Returning cached instance of singleton bean 'entityManagerFactory'
+17:12:02,956 main DEBUG DefaultListableBeanFactory:245 - Returning cached instance of singleton bean 'org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor#0'
+17:12:02,956 main DEBUG DefaultListableBeanFactory:217 - Creating shared instance of singleton bean 'transactionManager'
+17:12:02,957 main DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'transactionManager'
+17:12:02,964 main DEBUG DefaultListableBeanFactory:504 - Eagerly caching bean 'transactionManager' to allow for resolving potential circular references
+17:12:02,979 main DEBUG DefaultListableBeanFactory:245 - Returning cached instance of singleton bean 'entityManagerFactory'
+17:12:02,980 main DEBUG DefaultListableBeanFactory:245 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+17:12:02,984 main DEBUG DefaultListableBeanFactory:245 - Returning cached instance of singleton bean 'dataSource'
+17:12:02,989 main DEBUG DefaultListableBeanFactory:1498 - Invoking afterPropertiesSet() on bean with name 'transactionManager'
+17:12:02,989 main DEBUG DefaultListableBeanFactory:245 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+17:12:02,994 main DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'transactionManager'
+17:12:02,994 main DEBUG DefaultListableBeanFactory:245 - Returning cached instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+17:12:02,994 main DEBUG DefaultListableBeanFactory:245 - Returning cached instance of singleton bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0'
+17:12:02,996 main DEBUG DefaultListableBeanFactory:217 - Creating shared instance of singleton bean 'org.springframework.transaction.interceptor.TransactionInterceptor#0'
+17:12:02,996 main DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'org.springframework.transaction.interceptor.TransactionInterceptor#0'
+17:12:02,997 main DEBUG DefaultListableBeanFactory:504 - Eagerly caching bean 'org.springframework.transaction.interceptor.TransactionInterceptor#0' to allow for resolving potential circular references
+17:12:03,010 main DEBUG DefaultListableBeanFactory:245 - Returning cached instance of singleton bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0'
+17:12:03,011 main DEBUG DefaultListableBeanFactory:1498 - Invoking afterPropertiesSet() on bean with name 'org.springframework.transaction.interceptor.TransactionInterceptor#0'
+17:12:03,011 main DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'org.springframework.transaction.interceptor.TransactionInterceptor#0'
+17:12:03,015 main DEBUG DefaultListableBeanFactory:245 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+17:12:03,015 main DEBUG DefaultListableBeanFactory:217 - Creating shared instance of singleton bean 'jpaTemplate'
+17:12:03,015 main DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'jpaTemplate'
+17:12:03,017 main DEBUG DefaultListableBeanFactory:504 - Eagerly caching bean 'jpaTemplate' to allow for resolving potential circular references
+17:12:03,038 main DEBUG DefaultListableBeanFactory:245 - Returning cached instance of singleton bean 'entityManagerFactory'
+17:12:03,044 main DEBUG DefaultListableBeanFactory:1498 - Invoking afterPropertiesSet() on bean with name 'jpaTemplate'
+17:12:03,044 main DEBUG DefaultListableBeanFactory:245 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+17:12:03,048 main DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'jpaTemplate'
+17:12:03,049 main DEBUG DefaultListableBeanFactory:217 - Creating shared instance of singleton bean 'sampleObjectDaoImpl'
+17:12:03,049 main DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'sampleObjectDaoImpl'
+17:12:03,072 main DEBUG InjectionMetadata:61 - Found injected element on class [com.siliconnile.library.dao.impl.SampleObjectDaoImpl]: PersistenceElement for public void com.pearlox.framework.dao.impl.BasicJpaDao.setEntityManager(javax.persistence.EntityManager)
+17:12:03,076 main DEBUG InjectionMetadata:61 - Found injected element on class [com.siliconnile.library.dao.impl.SampleObjectDaoImpl]: PersistenceElement for public void com.pearlox.framework.dao.impl.BasicJpaDao.setEntityManager(javax.persistence.EntityManager)
+17:12:03,080 main DEBUG DefaultListableBeanFactory:504 - Eagerly caching bean 'sampleObjectDaoImpl' to allow for resolving potential circular references
+17:12:03,092 main DEBUG InjectionMetadata:90 - Processing injected method of bean 'sampleObjectDaoImpl': PersistenceElement for public void com.pearlox.framework.dao.impl.BasicJpaDao.setEntityManager(javax.persistence.EntityManager)
+17:12:03,095 main DEBUG DefaultListableBeanFactory:245 - Returning cached instance of singleton bean 'entityManagerFactory'
+17:12:03,114 main DEBUG DefaultListableBeanFactory:245 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+17:12:03,115 main DEBUG AnnotationTransactionAttributeSource:106 - Adding transactional method 'delete' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+17:12:03,123 main DEBUG InfrastructureAdvisorAutoProxyCreator:537 - Creating implicit proxy for bean 'sampleObjectDaoImpl' with 0 common interceptors and 1 specific interceptors
+17:12:03,129 main DEBUG JdkDynamicAopProxy:113 - Creating JDK dynamic proxy: target source is SingletonTargetSource for target object [com.siliconnile.library.dao.impl.SampleObjectDaoImpl@68ca224f]
+17:12:03,142 main DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'sampleObjectDaoImpl'
+17:12:03,150 main DEBUG DefaultListableBeanFactory:217 - Creating shared instance of singleton bean 'bookDaoImpl'
+17:12:03,151 main DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'bookDaoImpl'
+17:12:03,152 main DEBUG InjectionMetadata:61 - Found injected element on class [com.siliconnile.library.dao.impl.BookDaoImpl]: PersistenceElement for public void com.pearlox.framework.dao.impl.BasicJpaDao.setEntityManager(javax.persistence.EntityManager)
+17:12:03,152 main DEBUG InjectionMetadata:61 - Found injected element on class [com.siliconnile.library.dao.impl.BookDaoImpl]: PersistenceElement for public void com.pearlox.framework.dao.impl.BasicJpaDao.setEntityManager(javax.persistence.EntityManager)
+17:12:03,157 main DEBUG DefaultListableBeanFactory:504 - Eagerly caching bean 'bookDaoImpl' to allow for resolving potential circular references
+17:12:03,174 main DEBUG InjectionMetadata:90 - Processing injected method of bean 'bookDaoImpl': PersistenceElement for public void com.pearlox.framework.dao.impl.BasicJpaDao.setEntityManager(javax.persistence.EntityManager)
+17:12:03,174 main DEBUG DefaultListableBeanFactory:245 - Returning cached instance of singleton bean 'entityManagerFactory'
+17:12:03,175 main DEBUG DefaultListableBeanFactory:245 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+17:12:03,177 main DEBUG AnnotationTransactionAttributeSource:106 - Adding transactional method 'delete' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+17:12:03,177 main DEBUG InfrastructureAdvisorAutoProxyCreator:537 - Creating implicit proxy for bean 'bookDaoImpl' with 0 common interceptors and 1 specific interceptors
+17:12:03,178 main DEBUG JdkDynamicAopProxy:113 - Creating JDK dynamic proxy: target source is SingletonTargetSource for target object [com.siliconnile.library.dao.impl.BookDaoImpl@8bae7aa]
+17:12:03,188 main DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'bookDaoImpl'
+17:12:03,192 main DEBUG DefaultListableBeanFactory:217 - Creating shared instance of singleton bean 'DTOconverter'
+17:12:03,193 main DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'DTOconverter'
+17:12:03,194 main DEBUG DefaultListableBeanFactory:504 - Eagerly caching bean 'DTOconverter' to allow for resolving potential circular references
+17:12:03,202 main DEBUG DefaultListableBeanFactory:245 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+17:12:03,202 main DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'DTOconverter'
+17:12:03,208 main DEBUG DefaultListableBeanFactory:217 - Creating shared instance of singleton bean 'testServiceImpl'
+17:12:03,209 main DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'testServiceImpl'
+17:12:03,213 main DEBUG InjectionMetadata:61 - Found injected element on class [com.siliconnile.library.service.impl.TestServiceImpl]: AutowiredFieldElement for private com.siliconnile.library.dao.SampleObjectDao com.siliconnile.library.service.impl.TestServiceImpl.sampleObjectDao
+17:12:03,213 main DEBUG DefaultListableBeanFactory:504 - Eagerly caching bean 'testServiceImpl' to allow for resolving potential circular references
+17:12:03,218 main DEBUG InjectionMetadata:90 - Processing injected method of bean 'testServiceImpl': AutowiredFieldElement for private com.siliconnile.library.dao.SampleObjectDao com.siliconnile.library.service.impl.TestServiceImpl.sampleObjectDao
+17:12:03,224 main DEBUG DefaultListableBeanFactory:245 - Returning cached instance of singleton bean 'sampleObjectDaoImpl'
+17:12:03,224 main DEBUG AutowiredAnnotationBeanPostProcessor:432 - Autowiring by type from bean name 'testServiceImpl' to bean named 'sampleObjectDaoImpl'
+17:12:03,228 main DEBUG DefaultListableBeanFactory:245 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+17:12:03,229 main DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'testServiceImpl'
+17:12:03,229 main DEBUG DefaultListableBeanFactory:217 - Creating shared instance of singleton bean 'bookMaintenanceImpl'
+17:12:03,230 main DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'bookMaintenanceImpl'
+17:12:03,234 main DEBUG InjectionMetadata:61 - Found injected element on class [com.siliconnile.library.service.impl.BookMaintenanceImpl]: AutowiredFieldElement for private com.siliconnile.library.dao.BookDao com.siliconnile.library.service.impl.BookMaintenanceImpl.bookDao
+17:12:03,234 main DEBUG DefaultListableBeanFactory:504 - Eagerly caching bean 'bookMaintenanceImpl' to allow for resolving potential circular references
+17:12:03,238 main DEBUG InjectionMetadata:90 - Processing injected method of bean 'bookMaintenanceImpl': AutowiredFieldElement for private com.siliconnile.library.dao.BookDao com.siliconnile.library.service.impl.BookMaintenanceImpl.bookDao
+17:12:03,243 main DEBUG DefaultListableBeanFactory:245 - Returning cached instance of singleton bean 'bookDaoImpl'
+17:12:03,245 main DEBUG AutowiredAnnotationBeanPostProcessor:432 - Autowiring by type from bean name 'bookMaintenanceImpl' to bean named 'bookDaoImpl'
+17:12:03,245 main DEBUG DefaultListableBeanFactory:245 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+17:12:03,246 main DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'bookMaintenanceImpl'
+17:12:03,248 main DEBUG DefaultListableBeanFactory:245 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+17:12:03,248 main DEBUG DefaultListableBeanFactory:245 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+17:12:03,248 main DEBUG DefaultListableBeanFactory:245 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+17:12:03,249 main DEBUG DefaultListableBeanFactory:245 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+17:12:03,249 main DEBUG DefaultListableBeanFactory:245 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+17:12:03,249 main DEBUG DefaultListableBeanFactory:217 - Creating shared instance of singleton bean 'cxf'
+17:12:03,249 main DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'cxf'
+17:12:03,355 main DEBUG DefaultListableBeanFactory:504 - Eagerly caching bean 'cxf' to allow for resolving potential circular references
+17:12:03,408 main DEBUG DefaultListableBeanFactory:245 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+17:12:03,409 main DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'cxf'
+17:12:03,410 main DEBUG DefaultListableBeanFactory:245 - Returning cached instance of singleton bean 'org.apache.cxf.bus.spring.BusWiringBeanFactoryPostProcessor'
+17:12:03,410 main DEBUG DefaultListableBeanFactory:245 - Returning cached instance of singleton bean 'org.apache.cxf.bus.spring.Jsr250BeanPostProcessor'
+17:12:03,410 main DEBUG DefaultListableBeanFactory:245 - Returning cached instance of singleton bean 'org.apache.cxf.bus.spring.BusExtensionPostProcessor'
+17:12:03,410 main DEBUG DefaultListableBeanFactory:217 - Creating shared instance of singleton bean 'restContainer'
+17:12:03,414 main DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'restContainer'
+17:12:03,438 main DEBUG DefaultListableBeanFactory:504 - Eagerly caching bean 'restContainer' to allow for resolving potential circular references
+17:12:03,473 main DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'com.siliconnile.library.ws.service.impl.BookWebServiceImpl#5381129e'
+17:12:03,479 main DEBUG InjectionMetadata:61 - Found injected element on class [com.siliconnile.library.ws.service.impl.BookWebServiceImpl]: AutowiredFieldElement for private com.siliconnile.library.service.api.BookMaintenance com.siliconnile.library.ws.service.impl.BookWebServiceImpl.bookMaintenance
+17:12:03,479 main DEBUG InjectionMetadata:61 - Found injected element on class [com.siliconnile.library.ws.service.impl.BookWebServiceImpl]: AutowiredFieldElement for private com.siliconnile.library.ws.service.impl.DTOconverter com.siliconnile.library.ws.service.impl.BookWebServiceImpl.converter
+17:12:03,481 main DEBUG InjectionMetadata:90 - Processing injected method of bean 'com.siliconnile.library.ws.service.impl.BookWebServiceImpl#5381129e': AutowiredFieldElement for private com.siliconnile.library.service.api.BookMaintenance com.siliconnile.library.ws.service.impl.BookWebServiceImpl.bookMaintenance
+17:12:03,484 main DEBUG DefaultListableBeanFactory:245 - Returning cached instance of singleton bean 'bookMaintenanceImpl'
+17:12:03,485 main DEBUG AutowiredAnnotationBeanPostProcessor:432 - Autowiring by type from bean name 'com.siliconnile.library.ws.service.impl.BookWebServiceImpl#5381129e' to bean named 'bookMaintenanceImpl'
+17:12:03,485 main DEBUG InjectionMetadata:90 - Processing injected method of bean 'com.siliconnile.library.ws.service.impl.BookWebServiceImpl#5381129e': AutowiredFieldElement for private com.siliconnile.library.ws.service.impl.DTOconverter com.siliconnile.library.ws.service.impl.BookWebServiceImpl.converter
+17:12:03,486 main DEBUG DefaultListableBeanFactory:245 - Returning cached instance of singleton bean 'DTOconverter'
+17:12:03,486 main DEBUG AutowiredAnnotationBeanPostProcessor:432 - Autowiring by type from bean name 'com.siliconnile.library.ws.service.impl.BookWebServiceImpl#5381129e' to bean named 'DTOconverter'
+17:12:03,486 main DEBUG DefaultListableBeanFactory:245 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+17:12:03,497 main DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'com.siliconnile.library.ws.service.impl.BookWebServiceImpl#5381129e'
+17:12:03,502 main DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'org.codehaus.jackson.jaxrs.JacksonJaxbJsonProvider#3eed6de6'
+17:12:03,544 main DEBUG DefaultListableBeanFactory:245 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+17:12:03,549 main DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'org.codehaus.jackson.jaxrs.JacksonJaxbJsonProvider#3eed6de6'
+17:12:03,550 main DEBUG DefaultListableBeanFactory:430 - Creating instance of bean 'cxf:logging#21d3b6e9'
+17:12:03,575 main DEBUG StandardEnvironment:112 - Initializing new StandardEnvironment
+17:12:03,576 main DEBUG StandardEnvironment:107 - Adding [systemProperties] PropertySource with lowest search precedence
+17:12:03,579 main DEBUG StandardEnvironment:107 - Adding [systemEnvironment] PropertySource with lowest search precedence
+17:12:03,579 main DEBUG StandardEnvironment:116 - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+17:12:03,580 main DEBUG StandardEnvironment:112 - Initializing new StandardEnvironment
+17:12:03,580 main DEBUG StandardEnvironment:107 - Adding [systemProperties] PropertySource with lowest search precedence
+17:12:03,580 main DEBUG StandardEnvironment:107 - Adding [systemEnvironment] PropertySource with lowest search precedence
+17:12:03,581 main DEBUG StandardEnvironment:116 - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+17:12:03,581 main DEBUG StandardEnvironment:112 - Initializing new StandardEnvironment
+17:12:03,584 main DEBUG StandardEnvironment:107 - Adding [systemProperties] PropertySource with lowest search precedence
+17:12:03,584 main DEBUG StandardEnvironment:107 - Adding [systemEnvironment] PropertySource with lowest search precedence
+17:12:03,584 main DEBUG StandardEnvironment:116 - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+17:12:03,585 main DEBUG StandardEnvironment:112 - Initializing new StandardEnvironment
+17:12:03,585 main DEBUG StandardEnvironment:107 - Adding [systemProperties] PropertySource with lowest search precedence
+17:12:03,585 main DEBUG StandardEnvironment:107 - Adding [systemEnvironment] PropertySource with lowest search precedence
+17:12:03,585 main DEBUG StandardEnvironment:116 - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+17:12:03,587 main DEBUG StandardEnvironment:112 - Initializing new StandardEnvironment
+17:12:03,587 main DEBUG StandardEnvironment:107 - Adding [systemProperties] PropertySource with lowest search precedence
+17:12:03,590 main DEBUG StandardEnvironment:107 - Adding [systemEnvironment] PropertySource with lowest search precedence
+17:12:03,591 main DEBUG StandardEnvironment:116 - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+17:12:03,592 main DEBUG DefaultListableBeanFactory:245 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+17:12:03,599 main DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'cxf:logging#21d3b6e9'
+17:12:03,600 main DEBUG DefaultListableBeanFactory:245 - Returning cached instance of singleton bean 'cxf'
+17:12:03,699 main DEBUG DefaultListableBeanFactory:1555 - Invoking init method  'create' on bean with name 'restContainer'
+17:12:03,831 main DEBUG DefaultListableBeanFactory:245 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+17:12:03,832 main DEBUG DefaultListableBeanFactory:458 - Finished creating instance of bean 'restContainer'
+17:12:03,833 main DEBUG DefaultListableBeanFactory:245 - Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+17:12:03,833 main DEBUG XmlWebApplicationContext:851 - Unable to locate LifecycleProcessor with name 'lifecycleProcessor': using default [org.springframework.context.support.DefaultLifecycleProcessor@70de9d12]
+17:12:03,834 main DEBUG DefaultListableBeanFactory:245 - Returning cached instance of singleton bean 'lifecycleProcessor'
+17:12:03,835 main DEBUG ContextLoader:296 - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+17:12:03,835 main  INFO ContextLoader:301 - Root WebApplicationContext: initialization completed in 5677 ms
+17:12:03,837 main DEBUG StandardServletEnvironment:112 - Initializing new StandardServletEnvironment
+17:12:03,837 main DEBUG StandardServletEnvironment:107 - Adding [servletConfigInitParams] PropertySource with lowest search precedence
+17:12:03,837 main DEBUG StandardServletEnvironment:107 - Adding [servletContextInitParams] PropertySource with lowest search precedence
+17:12:03,838 main DEBUG StandardServletEnvironment:107 - Adding [jndiProperties] PropertySource with lowest search precedence
+17:12:03,838 main DEBUG StandardServletEnvironment:107 - Adding [systemProperties] PropertySource with lowest search precedence
+17:12:03,838 main DEBUG StandardServletEnvironment:107 - Adding [systemEnvironment] PropertySource with lowest search precedence
+17:12:03,838 main DEBUG StandardServletEnvironment:116 - Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,jndiProperties,systemProperties,systemEnvironment]
+17:12:03,839 main DEBUG OpenEntityManagerInViewFilter:172 - Initializing filter 'oemiv'
+17:12:03,840 main DEBUG OpenEntityManagerInViewFilter:197 - Filter 'oemiv' configured successfully
+17:12:03,903 main DEBUG DefaultListableBeanFactory:245 - Returning cached instance of singleton bean 'cxf'
+17:12:21,012 qtp1333730706-23 DEBUG DefaultListableBeanFactory:245 - Returning cached instance of singleton bean 'entityManagerFactory'
+17:12:21,017 qtp1333730706-23 DEBUG OpenEntityManagerInViewFilter:136 - Opening JPA EntityManager in OpenEntityManagerInViewFilter
+17:12:21,108 qtp1333730706-23 DEBUG DefaultListableBeanFactory:245 - Returning cached instance of singleton bean 'org.springframework.transaction.interceptor.TransactionInterceptor#0'
+17:12:21,109 qtp1333730706-23 DEBUG AnnotationTransactionAttributeSource:106 - Adding transactional method 'findById' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly; ''
+17:12:21,110 qtp1333730706-23 DEBUG DefaultListableBeanFactory:245 - Returning cached instance of singleton bean 'transactionManager'
+17:12:21,116 qtp1333730706-23 DEBUG JpaTransactionManager:331 - Found thread-bound EntityManager [org.hibernate.ejb.EntityManagerImpl@6e60c26b] for JPA transaction
+17:12:21,116 qtp1333730706-23 DEBUG JpaTransactionManager:365 - Creating new transaction with name [com.siliconnile.library.dao.impl.BookDaoImpl.findById]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly; ''
+17:12:21,133 qtp1333730706-23 DEBUG SessionImpl:220 - opened session at timestamp: 5732590965215232
+17:12:21,134 qtp1333730706-23 DEBUG JDBCTransaction:54 - begin
+17:12:21,135 qtp1333730706-23 DEBUG ConnectionManager:421 - opening JDBC connection
+17:12:21,135 qtp1333730706-23 DEBUG JDBCTransaction:59 - current autocommit status: true
+17:12:21,135 qtp1333730706-23 DEBUG JDBCTransaction:62 - disabling autocommit
+17:12:21,136 qtp1333730706-23 DEBUG JpaTransactionManager:400 - Exposing JPA transaction as JDBC transaction [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@3591d9f9]
+17:12:21,139 qtp1333730706-23 DEBUG Loader:1852 - loading entity: [com.siliconnile.library.domain.Book#4]
+17:12:21,142 qtp1333730706-23 DEBUG AbstractBatcher:366 - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+17:12:21,142 qtp1333730706-23 DEBUG SQL:401 - select book0_.id as id0_0_, book0_.author as author0_0_, book0_.isbn as isbn0_0_, book0_.picture_url as picture4_0_0_, book0_.title as title0_0_ from book book0_ where book0_.id=?
+17:12:21,176 qtp1333730706-23 DEBUG AbstractBatcher:382 - about to open ResultSet (open ResultSets: 0, globally: 0)
+17:12:21,176 qtp1333730706-23 DEBUG Loader:1173 - result row: EntityKey[com.siliconnile.library.domain.Book#4]
+17:12:21,182 qtp1333730706-23 DEBUG AbstractBatcher:389 - about to close ResultSet (open ResultSets: 1, globally: 1)
+17:12:21,183 qtp1333730706-23 DEBUG AbstractBatcher:374 - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+17:12:21,184 qtp1333730706-23 DEBUG TwoPhaseLoad:111 - resolving associations for [com.siliconnile.library.domain.Book#4]
+17:12:21,188 qtp1333730706-23 DEBUG TwoPhaseLoad:209 - done materializing entity [com.siliconnile.library.domain.Book#4]
+17:12:21,193 qtp1333730706-23 DEBUG StatefulPersistenceContext:837 - initializing non-lazy collections
+17:12:21,194 qtp1333730706-23 DEBUG Loader:1883 - done entity load
+17:12:21,194 qtp1333730706-23 DEBUG JpaTransactionManager:752 - Initiating transaction commit
+17:12:21,201 qtp1333730706-23 DEBUG JpaTransactionManager:507 - Committing JPA transaction on EntityManager [org.hibernate.ejb.EntityManagerImpl@6e60c26b]
+17:12:21,203 qtp1333730706-23 DEBUG JDBCTransaction:103 - commit
+17:12:21,204 qtp1333730706-23 DEBUG JDBCTransaction:193 - re-enabling autocommit
+17:12:21,204 qtp1333730706-23 DEBUG JDBCTransaction:116 - committed JDBC Connection
+17:12:21,205 qtp1333730706-23 DEBUG ConnectionManager:404 - aggressively releasing JDBC connection
+17:12:21,205 qtp1333730706-23 DEBUG ConnectionManager:441 - releasing JDBC connection [ (open PreparedStatements: 0, globally: 0) (open ResultSets: 0, globally: 0)]
+17:12:21,209 qtp1333730706-23 DEBUG JpaTransactionManager:598 - Not closing pre-bound JPA EntityManager after transaction
+17:12:21,210 qtp1333730706-23 DEBUG AnnotationTransactionAttributeSource:106 - Adding transactional method 'saveOrUpdate' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+17:12:21,215 qtp1333730706-23 DEBUG DefaultListableBeanFactory:245 - Returning cached instance of singleton bean 'transactionManager'
+17:12:21,215 qtp1333730706-23 DEBUG JpaTransactionManager:331 - Found thread-bound EntityManager [org.hibernate.ejb.EntityManagerImpl@6e60c26b] for JPA transaction
+17:12:21,215 qtp1333730706-23 DEBUG JpaTransactionManager:365 - Creating new transaction with name [com.siliconnile.library.dao.impl.BookDaoImpl.saveOrUpdate]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+17:12:21,216 qtp1333730706-23 DEBUG JDBCTransaction:54 - begin
+17:12:21,217 qtp1333730706-23 DEBUG ConnectionManager:421 - opening JDBC connection
+17:12:21,217 qtp1333730706-23 DEBUG JDBCTransaction:59 - current autocommit status: true
+17:12:21,217 qtp1333730706-23 DEBUG JDBCTransaction:62 - disabling autocommit
+17:12:21,219 qtp1333730706-23 DEBUG JpaTransactionManager:400 - Exposing JPA transaction as JDBC transaction [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@5ca14a5f]
+17:12:21,221 qtp1333730706-23 DEBUG AbstractFlushingEventListener:111 - processing flush-time cascades
+17:12:21,227 qtp1333730706-23 DEBUG AbstractFlushingEventListener:154 - dirty checking collections
+17:12:21,241 qtp1333730706-23 DEBUG Collections:176 - Collection found: [com.siliconnile.library.domain.Book.bookReader#4], was: [com.siliconnile.library.domain.Book.bookReader#4] (uninitialized)
+17:12:21,241 qtp1333730706-23 DEBUG AbstractFlushingEventListener:85 - Flushed: 0 insertions, 1 updates, 0 deletions to 1 objects
+17:12:21,242 qtp1333730706-23 DEBUG AbstractFlushingEventListener:91 - Flushed: 0 (re)creations, 0 updates, 0 removals to 1 collections
+17:12:21,243 qtp1333730706-23 DEBUG Printer:83 - listing entities:
+17:12:21,248 qtp1333730706-23 DEBUG Printer:90 - com.siliconnile.library.domain.Book{id=4, bookReader=<uninitialized>, author=authaaor, title=12221, pictureUrl=sdg, isbn=12221}
+17:12:21,252 qtp1333730706-23 DEBUG AbstractBatcher:366 - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+17:12:21,255 qtp1333730706-23 DEBUG SQL:401 - update book set author=?, isbn=?, picture_url=?, title=? where id=?
+17:12:21,257 qtp1333730706-23 DEBUG AbstractBatcher:44 - Executing batch size: 1
+17:12:21,260 qtp1333730706-23 DEBUG AbstractBatcher:374 - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+17:12:21,260 qtp1333730706-23 DEBUG JpaTransactionManager:752 - Initiating transaction commit
+17:12:21,260 qtp1333730706-23 DEBUG JpaTransactionManager:507 - Committing JPA transaction on EntityManager [org.hibernate.ejb.EntityManagerImpl@6e60c26b]
+17:12:21,260 qtp1333730706-23 DEBUG JDBCTransaction:103 - commit
+17:12:21,260 qtp1333730706-23 DEBUG AbstractFlushingEventListener:111 - processing flush-time cascades
+17:12:21,264 qtp1333730706-23 DEBUG AbstractFlushingEventListener:154 - dirty checking collections
+17:12:21,264 qtp1333730706-23 DEBUG Collections:176 - Collection found: [com.siliconnile.library.domain.Book.bookReader#4], was: [com.siliconnile.library.domain.Book.bookReader#4] (uninitialized)
+17:12:21,264 qtp1333730706-23 DEBUG AbstractFlushingEventListener:85 - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
+17:12:21,265 qtp1333730706-23 DEBUG AbstractFlushingEventListener:91 - Flushed: 0 (re)creations, 0 updates, 0 removals to 1 collections
+17:12:21,265 qtp1333730706-23 DEBUG Printer:83 - listing entities:
+17:12:21,265 qtp1333730706-23 DEBUG Printer:90 - com.siliconnile.library.domain.Book{id=4, bookReader=<uninitialized>, author=authaaor, title=12221, pictureUrl=sdg, isbn=12221}
+17:12:21,267 qtp1333730706-23 DEBUG JDBCTransaction:193 - re-enabling autocommit
+17:12:21,267 qtp1333730706-23 DEBUG JDBCTransaction:116 - committed JDBC Connection
+17:12:21,268 qtp1333730706-23 DEBUG ConnectionManager:404 - aggressively releasing JDBC connection
+17:12:21,268 qtp1333730706-23 DEBUG ConnectionManager:441 - releasing JDBC connection [ (open PreparedStatements: 0, globally: 0) (open ResultSets: 0, globally: 0)]
+17:12:21,268 qtp1333730706-23 DEBUG JpaTransactionManager:598 - Not closing pre-bound JPA EntityManager after transaction
+17:12:21,526 qtp1333730706-23 DEBUG OpenEntityManagerInViewFilter:154 - Closing JPA EntityManager in OpenEntityManagerInViewFilter
+17:12:21,526 qtp1333730706-23 DEBUG EntityManagerFactoryUtils:343 - Closing JPA EntityManager
+17:22:45,398 qtp1333730706-19 DEBUG OpenEntityManagerInViewFilter:136 - Opening JPA EntityManager in OpenEntityManagerInViewFilter
+17:22:45,404 qtp1333730706-19 DEBUG DefaultListableBeanFactory:245 - Returning cached instance of singleton bean 'transactionManager'
+17:22:45,404 qtp1333730706-19 DEBUG JpaTransactionManager:331 - Found thread-bound EntityManager [org.hibernate.ejb.EntityManagerImpl@11d6e3af] for JPA transaction
+17:22:45,404 qtp1333730706-19 DEBUG JpaTransactionManager:365 - Creating new transaction with name [com.siliconnile.library.dao.impl.BookDaoImpl.findById]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly; ''
+17:22:45,405 qtp1333730706-19 DEBUG SessionImpl:220 - opened session at timestamp: 5732593522298880
+17:22:45,405 qtp1333730706-19 DEBUG JDBCTransaction:54 - begin
+17:22:45,411 qtp1333730706-19 DEBUG ConnectionManager:421 - opening JDBC connection
+17:22:45,414 qtp1333730706-19 DEBUG JDBCTransaction:59 - current autocommit status: true
+17:22:45,414 qtp1333730706-19 DEBUG JDBCTransaction:62 - disabling autocommit
+17:22:45,414 qtp1333730706-19 DEBUG JpaTransactionManager:400 - Exposing JPA transaction as JDBC transaction [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@6bc6dd16]
+17:22:45,415 qtp1333730706-19 DEBUG Loader:1852 - loading entity: [com.siliconnile.library.domain.Book#4]
+17:22:45,415 qtp1333730706-19 DEBUG AbstractBatcher:366 - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+17:22:45,415 qtp1333730706-19 DEBUG SQL:401 - select book0_.id as id0_0_, book0_.author as author0_0_, book0_.isbn as isbn0_0_, book0_.picture_url as picture4_0_0_, book0_.title as title0_0_ from book book0_ where book0_.id=?
+17:22:45,417 qtp1333730706-19 DEBUG AbstractBatcher:382 - about to open ResultSet (open ResultSets: 0, globally: 0)
+17:22:45,418 qtp1333730706-19 DEBUG Loader:1173 - result row: EntityKey[com.siliconnile.library.domain.Book#4]
+17:22:45,418 qtp1333730706-19 DEBUG AbstractBatcher:389 - about to close ResultSet (open ResultSets: 1, globally: 1)
+17:22:45,420 qtp1333730706-19 DEBUG AbstractBatcher:374 - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+17:22:45,420 qtp1333730706-19 DEBUG TwoPhaseLoad:111 - resolving associations for [com.siliconnile.library.domain.Book#4]
+17:22:45,421 qtp1333730706-19 DEBUG TwoPhaseLoad:209 - done materializing entity [com.siliconnile.library.domain.Book#4]
+17:22:45,421 qtp1333730706-19 DEBUG StatefulPersistenceContext:837 - initializing non-lazy collections
+17:22:45,421 qtp1333730706-19 DEBUG Loader:1883 - done entity load
+17:22:45,422 qtp1333730706-19 DEBUG JpaTransactionManager:752 - Initiating transaction commit
+17:22:45,422 qtp1333730706-19 DEBUG JpaTransactionManager:507 - Committing JPA transaction on EntityManager [org.hibernate.ejb.EntityManagerImpl@11d6e3af]
+17:22:45,422 qtp1333730706-19 DEBUG JDBCTransaction:103 - commit
+17:22:45,426 qtp1333730706-19 DEBUG JDBCTransaction:193 - re-enabling autocommit
+17:22:45,426 qtp1333730706-19 DEBUG JDBCTransaction:116 - committed JDBC Connection
+17:22:45,427 qtp1333730706-19 DEBUG ConnectionManager:404 - aggressively releasing JDBC connection
+17:22:45,427 qtp1333730706-19 DEBUG ConnectionManager:441 - releasing JDBC connection [ (open PreparedStatements: 0, globally: 0) (open ResultSets: 0, globally: 0)]
+17:22:45,429 qtp1333730706-19 DEBUG JpaTransactionManager:598 - Not closing pre-bound JPA EntityManager after transaction
+17:22:45,429 qtp1333730706-19 DEBUG DefaultListableBeanFactory:245 - Returning cached instance of singleton bean 'transactionManager'
+17:22:45,429 qtp1333730706-19 DEBUG JpaTransactionManager:331 - Found thread-bound EntityManager [org.hibernate.ejb.EntityManagerImpl@11d6e3af] for JPA transaction
+17:22:45,430 qtp1333730706-19 DEBUG JpaTransactionManager:365 - Creating new transaction with name [com.siliconnile.library.dao.impl.BookDaoImpl.saveOrUpdate]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+17:22:45,430 qtp1333730706-19 DEBUG JDBCTransaction:54 - begin
+17:22:45,430 qtp1333730706-19 DEBUG ConnectionManager:421 - opening JDBC connection
+17:22:45,430 qtp1333730706-19 DEBUG JDBCTransaction:59 - current autocommit status: true
+17:22:45,434 qtp1333730706-19 DEBUG JDBCTransaction:62 - disabling autocommit
+17:22:45,434 qtp1333730706-19 DEBUG JpaTransactionManager:400 - Exposing JPA transaction as JDBC transaction [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@406fcbe8]
+17:22:45,435 qtp1333730706-19 DEBUG AbstractFlushingEventListener:111 - processing flush-time cascades
+17:22:45,437 qtp1333730706-19 DEBUG AbstractFlushingEventListener:154 - dirty checking collections
+17:22:45,437 qtp1333730706-19 DEBUG Collections:176 - Collection found: [com.siliconnile.library.domain.Book.bookReader#4], was: [com.siliconnile.library.domain.Book.bookReader#4] (uninitialized)
+17:22:45,438 qtp1333730706-19 DEBUG AbstractFlushingEventListener:85 - Flushed: 0 insertions, 1 updates, 0 deletions to 1 objects
+17:22:45,439 qtp1333730706-19 DEBUG AbstractFlushingEventListener:91 - Flushed: 0 (re)creations, 0 updates, 0 removals to 1 collections
+17:22:45,439 qtp1333730706-19 DEBUG Printer:83 - listing entities:
+17:22:45,442 qtp1333730706-19 DEBUG Printer:90 - com.siliconnile.library.domain.Book{id=4, bookReader=<uninitialized>, author=a77777uthaaor, title=12221, pictureUrl=sdg, isbn=12221}
+17:22:45,442 qtp1333730706-19 DEBUG AbstractBatcher:366 - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+17:22:45,442 qtp1333730706-19 DEBUG SQL:401 - update book set author=?, isbn=?, picture_url=?, title=? where id=?
+17:22:45,442 qtp1333730706-19 DEBUG AbstractBatcher:44 - Executing batch size: 1
+17:22:45,443 qtp1333730706-19 DEBUG AbstractBatcher:374 - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+17:22:45,443 qtp1333730706-19 DEBUG JpaTransactionManager:752 - Initiating transaction commit
+17:22:45,443 qtp1333730706-19 DEBUG JpaTransactionManager:507 - Committing JPA transaction on EntityManager [org.hibernate.ejb.EntityManagerImpl@11d6e3af]
+17:22:45,444 qtp1333730706-19 DEBUG JDBCTransaction:103 - commit
+17:22:45,449 qtp1333730706-19 DEBUG AbstractFlushingEventListener:111 - processing flush-time cascades
+17:22:45,449 qtp1333730706-19 DEBUG AbstractFlushingEventListener:154 - dirty checking collections
+17:22:45,450 qtp1333730706-19 DEBUG Collections:176 - Collection found: [com.siliconnile.library.domain.Book.bookReader#4], was: [com.siliconnile.library.domain.Book.bookReader#4] (uninitialized)
+17:22:45,450 qtp1333730706-19 DEBUG AbstractFlushingEventListener:85 - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
+17:22:45,450 qtp1333730706-19 DEBUG AbstractFlushingEventListener:91 - Flushed: 0 (re)creations, 0 updates, 0 removals to 1 collections
+17:22:45,450 qtp1333730706-19 DEBUG Printer:83 - listing entities:
+17:22:45,455 qtp1333730706-19 DEBUG Printer:90 - com.siliconnile.library.domain.Book{id=4, bookReader=<uninitialized>, author=a77777uthaaor, title=12221, pictureUrl=sdg, isbn=12221}
+17:22:45,456 qtp1333730706-19 DEBUG JDBCTransaction:193 - re-enabling autocommit
+17:22:45,456 qtp1333730706-19 DEBUG JDBCTransaction:116 - committed JDBC Connection
+17:22:45,456 qtp1333730706-19 DEBUG ConnectionManager:404 - aggressively releasing JDBC connection
+17:22:45,456 qtp1333730706-19 DEBUG ConnectionManager:441 - releasing JDBC connection [ (open PreparedStatements: 0, globally: 0) (open ResultSets: 0, globally: 0)]
+17:22:45,456 qtp1333730706-19 DEBUG JpaTransactionManager:598 - Not closing pre-bound JPA EntityManager after transaction
+17:22:45,465 qtp1333730706-19 DEBUG OpenEntityManagerInViewFilter:154 - Closing JPA EntityManager in OpenEntityManagerInViewFilter
+17:22:45,465 qtp1333730706-19 DEBUG EntityManagerFactoryUtils:343 - Closing JPA EntityManager
+17:23:13,131 qtp1333730706-19 DEBUG OpenEntityManagerInViewFilter:136 - Opening JPA EntityManager in OpenEntityManagerInViewFilter
+17:23:13,133 qtp1333730706-19 DEBUG DefaultListableBeanFactory:245 - Returning cached instance of singleton bean 'transactionManager'
+17:23:13,134 qtp1333730706-19 DEBUG JpaTransactionManager:331 - Found thread-bound EntityManager [org.hibernate.ejb.EntityManagerImpl@62dca5f4] for JPA transaction
+17:23:13,134 qtp1333730706-19 DEBUG JpaTransactionManager:365 - Creating new transaction with name [com.siliconnile.library.dao.impl.BookDaoImpl.findById]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly; ''
+17:23:13,137 qtp1333730706-19 DEBUG SessionImpl:220 - opened session at timestamp: 5732593635889152
+17:23:13,137 qtp1333730706-19 DEBUG JDBCTransaction:54 - begin
+17:23:13,138 qtp1333730706-19 DEBUG ConnectionManager:421 - opening JDBC connection
+17:23:13,139 qtp1333730706-19 DEBUG JDBCTransaction:59 - current autocommit status: true
+17:23:13,139 qtp1333730706-19 DEBUG JDBCTransaction:62 - disabling autocommit
+17:23:13,140 qtp1333730706-19 DEBUG JpaTransactionManager:400 - Exposing JPA transaction as JDBC transaction [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@41368e1]
+17:23:13,140 qtp1333730706-19 DEBUG Loader:1852 - loading entity: [com.siliconnile.library.domain.Book#4]
+17:23:13,143 qtp1333730706-19 DEBUG AbstractBatcher:366 - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+17:23:13,144 qtp1333730706-19 DEBUG SQL:401 - select book0_.id as id0_0_, book0_.author as author0_0_, book0_.isbn as isbn0_0_, book0_.picture_url as picture4_0_0_, book0_.title as title0_0_ from book book0_ where book0_.id=?
+17:23:13,149 qtp1333730706-19 DEBUG AbstractBatcher:382 - about to open ResultSet (open ResultSets: 0, globally: 0)
+17:23:13,150 qtp1333730706-19 DEBUG Loader:1173 - result row: EntityKey[com.siliconnile.library.domain.Book#4]
+17:23:13,150 qtp1333730706-19 DEBUG AbstractBatcher:389 - about to close ResultSet (open ResultSets: 1, globally: 1)
+17:23:13,151 qtp1333730706-19 DEBUG AbstractBatcher:374 - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+17:23:13,151 qtp1333730706-19 DEBUG TwoPhaseLoad:111 - resolving associations for [com.siliconnile.library.domain.Book#4]
+17:23:13,151 qtp1333730706-19 DEBUG TwoPhaseLoad:209 - done materializing entity [com.siliconnile.library.domain.Book#4]
+17:23:13,152 qtp1333730706-19 DEBUG StatefulPersistenceContext:837 - initializing non-lazy collections
+17:23:13,152 qtp1333730706-19 DEBUG Loader:1883 - done entity load
+17:23:13,154 qtp1333730706-19 DEBUG JpaTransactionManager:752 - Initiating transaction commit
+17:23:13,156 qtp1333730706-19 DEBUG JpaTransactionManager:507 - Committing JPA transaction on EntityManager [org.hibernate.ejb.EntityManagerImpl@62dca5f4]
+17:23:13,157 qtp1333730706-19 DEBUG JDBCTransaction:103 - commit
+17:23:13,158 qtp1333730706-19 DEBUG JDBCTransaction:193 - re-enabling autocommit
+17:23:13,158 qtp1333730706-19 DEBUG JDBCTransaction:116 - committed JDBC Connection
+17:23:13,159 qtp1333730706-19 DEBUG ConnectionManager:404 - aggressively releasing JDBC connection
+17:23:13,159 qtp1333730706-19 DEBUG ConnectionManager:441 - releasing JDBC connection [ (open PreparedStatements: 0, globally: 0) (open ResultSets: 0, globally: 0)]
+17:23:13,159 qtp1333730706-19 DEBUG JpaTransactionManager:598 - Not closing pre-bound JPA EntityManager after transaction
+17:23:13,160 qtp1333730706-19 DEBUG DefaultListableBeanFactory:245 - Returning cached instance of singleton bean 'transactionManager'
+17:23:13,160 qtp1333730706-19 DEBUG JpaTransactionManager:331 - Found thread-bound EntityManager [org.hibernate.ejb.EntityManagerImpl@62dca5f4] for JPA transaction
+17:23:13,160 qtp1333730706-19 DEBUG JpaTransactionManager:365 - Creating new transaction with name [com.siliconnile.library.dao.impl.BookDaoImpl.saveOrUpdate]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+17:23:13,164 qtp1333730706-19 DEBUG JDBCTransaction:54 - begin
+17:23:13,164 qtp1333730706-19 DEBUG ConnectionManager:421 - opening JDBC connection
+17:23:13,164 qtp1333730706-19 DEBUG JDBCTransaction:59 - current autocommit status: true
+17:23:13,165 qtp1333730706-19 DEBUG JDBCTransaction:62 - disabling autocommit
+17:23:13,165 qtp1333730706-19 DEBUG JpaTransactionManager:400 - Exposing JPA transaction as JDBC transaction [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@7236211]
+17:23:13,167 qtp1333730706-19 DEBUG AbstractFlushingEventListener:111 - processing flush-time cascades
+17:23:13,167 qtp1333730706-19 DEBUG AbstractFlushingEventListener:154 - dirty checking collections
+17:23:13,168 qtp1333730706-19 DEBUG Collections:176 - Collection found: [com.siliconnile.library.domain.Book.bookReader#4], was: [com.siliconnile.library.domain.Book.bookReader#4] (uninitialized)
+17:23:13,168 qtp1333730706-19 DEBUG AbstractFlushingEventListener:85 - Flushed: 0 insertions, 1 updates, 0 deletions to 1 objects
+17:23:13,168 qtp1333730706-19 DEBUG AbstractFlushingEventListener:91 - Flushed: 0 (re)creations, 0 updates, 0 removals to 1 collections
+17:23:13,171 qtp1333730706-19 DEBUG Printer:83 - listing entities:
+17:23:13,171 qtp1333730706-19 DEBUG Printer:90 - com.siliconnile.library.domain.Book{id=4, bookReader=<uninitialized>, author=a77777uthaaor, title=abdelrazik, pictureUrl=sdg, isbn=12221}
+17:23:13,172 qtp1333730706-19 DEBUG AbstractBatcher:366 - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+17:23:13,172 qtp1333730706-19 DEBUG SQL:401 - update book set author=?, isbn=?, picture_url=?, title=? where id=?
+17:23:13,176 qtp1333730706-19 DEBUG AbstractBatcher:44 - Executing batch size: 1
+17:23:13,176 qtp1333730706-19 DEBUG AbstractBatcher:374 - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+17:23:13,177 qtp1333730706-19 DEBUG JpaTransactionManager:752 - Initiating transaction commit
+17:23:13,177 qtp1333730706-19 DEBUG JpaTransactionManager:507 - Committing JPA transaction on EntityManager [org.hibernate.ejb.EntityManagerImpl@62dca5f4]
+17:23:13,177 qtp1333730706-19 DEBUG JDBCTransaction:103 - commit
+17:23:13,177 qtp1333730706-19 DEBUG AbstractFlushingEventListener:111 - processing flush-time cascades
+17:23:13,177 qtp1333730706-19 DEBUG AbstractFlushingEventListener:154 - dirty checking collections
+17:23:13,178 qtp1333730706-19 DEBUG Collections:176 - Collection found: [com.siliconnile.library.domain.Book.bookReader#4], was: [com.siliconnile.library.domain.Book.bookReader#4] (uninitialized)
+17:23:13,178 qtp1333730706-19 DEBUG AbstractFlushingEventListener:85 - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
+17:23:13,178 qtp1333730706-19 DEBUG AbstractFlushingEventListener:91 - Flushed: 0 (re)creations, 0 updates, 0 removals to 1 collections
+17:23:13,178 qtp1333730706-19 DEBUG Printer:83 - listing entities:
+17:23:13,181 qtp1333730706-19 DEBUG Printer:90 - com.siliconnile.library.domain.Book{id=4, bookReader=<uninitialized>, author=a77777uthaaor, title=abdelrazik, pictureUrl=sdg, isbn=12221}
+17:23:13,182 qtp1333730706-19 DEBUG JDBCTransaction:193 - re-enabling autocommit
+17:23:13,182 qtp1333730706-19 DEBUG JDBCTransaction:116 - committed JDBC Connection
+17:23:13,182 qtp1333730706-19 DEBUG ConnectionManager:404 - aggressively releasing JDBC connection
+17:23:13,182 qtp1333730706-19 DEBUG ConnectionManager:441 - releasing JDBC connection [ (open PreparedStatements: 0, globally: 0) (open ResultSets: 0, globally: 0)]
+17:23:13,183 qtp1333730706-19 DEBUG JpaTransactionManager:598 - Not closing pre-bound JPA EntityManager after transaction
+17:23:13,185 qtp1333730706-19 DEBUG OpenEntityManagerInViewFilter:154 - Closing JPA EntityManager in OpenEntityManagerInViewFilter
+17:23:13,185 qtp1333730706-19 DEBUG EntityManagerFactoryUtils:343 - Closing JPA EntityManager
+17:23:53,574 Thread-1  INFO XmlWebApplicationContext:1032 - Closing Root WebApplicationContext: startup date [Thu May 08 17:11:58 EEST 2014]; root of context hierarchy
+17:23:53,577 Thread-1 DEBUG DefaultListableBeanFactory:245 - Returning cached instance of singleton bean 'lifecycleProcessor'
+17:23:53,577 Thread-1  INFO DefaultListableBeanFactory:434 - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@528d8c58: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,dataSource,entityManagerFactory,org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor#0,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,jpaTemplate,sampleObjectDaoImpl,bookDaoImpl,DTOconverter,testServiceImpl,bookMaintenanceImpl,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,cxf,org.apache.cxf.bus.spring.BusWiringBeanFactoryPostProcessor,org.apache.cxf.bus.spring.Jsr250BeanPostProcessor,org.apache.cxf.bus.spring.BusExtensionPostProcessor,restContainer,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+17:23:53,578 Thread-1 DEBUG DefaultListableBeanFactory:489 - Retrieved dependent beans for bean 'com.siliconnile.library.ws.service.impl.BookWebServiceImpl#5381129e': [restContainer]
+17:23:53,578 Thread-1 DEBUG DisposableBeanAdapter:275 - Invoking destroy method 'shutdown' on bean with name 'cxf'
+17:23:53,580 Thread-1 DEBUG DisposableBeanAdapter:199 - Invoking destroy() on bean with name 'entityManagerFactory'
+17:23:53,581 Thread-1  INFO LocalContainerEntityManagerFactoryBean:441 - Closing JPA EntityManagerFactory for persistence unit 'testPU'
+17:23:53,581 Thread-1  INFO SessionFactoryImpl:769 - closing
+17:23:53,581 Thread-1 DEBUG DefaultListableBeanFactory:489 - Retrieved dependent beans for bean 'org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter#546b0add': [entityManagerFactory]
+17:23:53,582 Thread-1 DEBUG DisposableBeanAdapter:275 - Invoking destroy method 'close' on bean with name 'dataSource'
