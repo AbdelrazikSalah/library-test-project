@@ -33,7 +33,7 @@
     
     <jaxrs:server id="restContainer" address="/">
         <jaxrs:serviceBeans>
-            <bean class="com.siliconnile.library.ws.service.impl.TestWebServiceImpl" autowire="autodetect"/>
+            <bean class="com.siliconnile.library.ws.service.impl.BookWebServiceImpl" autowire="autodetect"/>
         </jaxrs:serviceBeans>
         <jaxrs:providers>
             <bean class="org.codehaus.jackson.jaxrs.JacksonJaxbJsonProvider" />
