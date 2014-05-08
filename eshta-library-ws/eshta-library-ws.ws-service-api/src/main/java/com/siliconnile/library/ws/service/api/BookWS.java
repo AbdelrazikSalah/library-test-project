@@ -31,7 +31,7 @@ public interface BookWS {
     @POST
     @Path("/addOrUpdateNewBook")
     @Produces(MediaType.APPLICATION_JSON)
-    BookDTO addOrUpdateNewBook(@FormParam ("id") Long id,@FormParam ("title") String title, @FormParam ("author") String author, @FormParam ("isbn") String isbn,  @FormParam ("picture_url") String pictureUrl);
+    BookDTO addOrUpdateNewBook(@FormParam ("id") Long id,@FormParam ("title") String title, @FormParam ("author") String author, @FormParam ("isbn") String isbn,  @FormParam ("pictureURL") String pictureURL);
 
     
     

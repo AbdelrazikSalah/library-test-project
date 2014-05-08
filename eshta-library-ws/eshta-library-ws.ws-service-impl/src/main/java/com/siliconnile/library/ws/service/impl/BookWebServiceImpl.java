@@ -38,13 +38,13 @@ public class BookWebServiceImpl implements BookWS {
 	
 
 	@Override
-	public BookDTO addOrUpdateNewBook(Long id, String title,  String author, String isbn,  String pictureUrl) {
+	public BookDTO addOrUpdateNewBook(Long id, String title,  String author, String isbn,  String pictureURL) {
 	if (id == null){
 		Book book = new Book();
 		book.setTitle(title);
 		book.setAuthor(author);
 		book.setIsbn(isbn);
-		book.setPictureUrl(pictureUrl);
+		book.setPictureUrl(pictureURL);
 		
 		Book e =  bookMaintenance.addOrUpdateNewBook(book);
 		// create new employee DTO and fill it from e
@@ -67,8 +67,8 @@ public class BookWebServiceImpl implements BookWS {
 			bookDTO.setTitle(isbn);
 						
 		}
-		if(pictureUrl == null){
-			bookDTO.setPictureUrl(pictureUrl);
+		if(pictureURL == null){
+			bookDTO.setPictureUrl(pictureURL);
 						
 		}
 		

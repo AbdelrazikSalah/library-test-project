@@ -12,24 +12,20 @@ import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 /**
- * User: Abdelrazik
- * Date: 08/5/14
+ * User: Abdelrazik Date: 08/5/14
  */
 @SuppressWarnings("serial")
 @Entity
 @Table(name = "reader")
 public class Reader extends BasicObject {
 
-
-	
 	private String name;
-    
-    private Date date;
-    
-    private Collection<BookReader> bookReader;
 
-    
-    @Column(name="name")
+	private Date date;
+
+	private Collection<BookReader> bookReader;
+
+	@Column(name = "name")
 	private String getName() {
 		return name;
 	}
@@ -37,7 +33,8 @@ public class Reader extends BasicObject {
 	private void setName(String name) {
 		this.name = name;
 	}
-	 @Column(name="regdate")
+
+	@Column(name = "regdate")
 	private Date getDate() {
 		return date;
 	}
@@ -50,26 +47,9 @@ public class Reader extends BasicObject {
 		this.date = date;
 	}
 
-	
 	@OneToMany(fetch = FetchType.LAZY, mappedBy = "reader")
 	private Collection<BookReader> getBookReader() {
 		return bookReader;
 	}
-    
-    
-    
-    
 
-    
-    
-   
-	
-
-    
-    
-  
-
-
-    
-    
 }
