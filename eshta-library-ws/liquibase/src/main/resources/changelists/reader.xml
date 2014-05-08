@@ -13,8 +13,14 @@
             <column name="regdate" type="timestamp">
                 <constraints nullable="false"/>
             </column>
+             <column name="book_id" type="int"/>
             
         </createTable>
     </changeSet>
+    
+    
+
+
+    
 
 </databaseChangeLog>

@@ -7,6 +7,8 @@
     <include file="changelists/db.changelog-1.0.xml" />
     <include file="changelists/book.xml" />
     <include file="changelists/reader.xml" />
+    <include file="changelists/book_reader.xml" />
+    
 
 </databaseChangeLog>
 

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog/1.9"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog/1.9 http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-1.9.xsd">
+
+	
+<changeSet id="1" author="abdelrazik">
+        <createTable tableName="book_reader">
+            <column name="id" type="int" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="book_id" type="int"/>
+            <column name="reader_id" type="int"/>         
+        </createTable>
+        
+       <addForeignKeyConstraint baseColumnNames="book_id"
+            baseTableName="book_reader"
+            constraintName="fk_book"
+            deferrable="true"
+            initiallyDeferred="true"
+            onDelete="CASCADE"
+            onUpdate="RESTRICT"
+            referencedColumnNames="id"
+            referencedTableName="book"/>
+            
+       <addForeignKeyConstraint baseColumnNames="reader_id"
+            baseTableName="book_reader"
+            constraintName="fk_reader"
+            deferrable="true"
+            initiallyDeferred="true"
+            onDelete="CASCADE"
+            onUpdate="RESTRICT"
+            referencedColumnNames="id"
+            referencedTableName="reader"/>
+    </changeSet>
+    
+    
+
+</databaseChangeLog>

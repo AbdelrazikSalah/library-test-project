@@ -9,6 +9,7 @@
      
         <class>com.siliconnile.library.domain.Book</class>
         <class>com.siliconnile.library.domain.Reader</class>
+        <class>com.siliconnile.library.domain.BookReader</class>
         <exclude-unlisted-classes />
 
         <properties>

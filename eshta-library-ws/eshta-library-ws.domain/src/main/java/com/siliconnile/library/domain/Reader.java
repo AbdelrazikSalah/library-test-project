@@ -1,9 +1,14 @@
 package com.siliconnile.library.domain;
 
+import java.util.Collection;
+import java.util.Date;
+
 import com.pearlox.framework.domain.BasicObject;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 /**
@@ -19,7 +24,9 @@ public class Reader extends BasicObject {
 	
 	private String name;
     
-    private String date;
+    private Date date;
+    
+    private Collection<BookReader> bookReader;
 
     
     @Column(name="name")
@@ -31,12 +38,22 @@ public class Reader extends BasicObject {
 		this.name = name;
 	}
 	 @Column(name="regdate")
-	private String getDate() {
+	private Date getDate() {
 		return date;
 	}
 
-	private void setDate(String date) {
+	private void setBookReader(Collection<BookReader> bookReader) {
+		this.bookReader = bookReader;
+	}
+
+	private void setDate(Date date) {
 		this.date = date;
+	}
+
+	
+	@OneToMany(fetch = FetchType.LAZY, mappedBy = "reader")
+	private Collection<BookReader> getBookReader() {
+		return bookReader;
 	}
     
     

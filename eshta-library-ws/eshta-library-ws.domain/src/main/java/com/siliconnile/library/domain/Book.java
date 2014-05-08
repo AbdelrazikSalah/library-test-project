@@ -1,10 +1,15 @@
 package com.siliconnile.library.domain;
 
+import java.util.Collection;
+
 import com.pearlox.framework.domain.BasicObject;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
+
 
 /**
  * User: Abdelrazik
@@ -24,6 +29,8 @@ public class Book extends BasicObject {
     private String pictureUrl;
     
     private String isbn;
+    
+    private Collection<BookReader> bookReader;
 
     
     
@@ -64,6 +71,16 @@ public class Book extends BasicObject {
 
 	public void setIsbn(String isbn) {
 		this.isbn = isbn;
+	}
+
+	
+	private void setBookReader(Collection<BookReader> bookReader) {
+		this.bookReader = bookReader;
+	}
+
+	@OneToMany(fetch = FetchType.LAZY, mappedBy = "book" )
+	public Collection<BookReader> getBookReader() {
+		return bookReader;
 	}
 
 	
