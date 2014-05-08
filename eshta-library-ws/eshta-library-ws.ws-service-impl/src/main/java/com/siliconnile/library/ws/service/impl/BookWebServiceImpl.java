@@ -47,34 +47,27 @@ public class BookWebServiceImpl implements BookWS {
 		book.setPictureUrl(pictureURL);
 		
 		Book e =  bookMaintenance.addOrUpdateNewBook(book);
-		// create new employee DTO and fill it from e
+		
 		DTOconverter converter = new DTOconverter();
 		BookDTO result = converter.getBookDTO(e);
 		return result;}
 	else
 	{
-		Book book = bookMaintenance.getBookById(id);
-		BookDTO bookDTO = converter.getBookDTO(book);
-		if(title == null){
-			bookDTO.setTitle(title);
-						
-		}
-		if(author == null){
-			bookDTO.setAuthor(author);
-						
-		}
-		if(isbn == null){
-			bookDTO.setTitle(isbn);
-						
-		}
-		if(pictureURL == null){
-			bookDTO.setPictureUrl(pictureURL);
-						
-		}
+		
+		Book book = new Book();
+		book.setId(id);
+		book.setTitle(title);
+		book.setAuthor(author);
+		book.setIsbn(isbn);
+		book.setPictureUrl(pictureURL);
+		
+		
+		Book e =  bookMaintenance.addOrUpdateNewBook(book);
+		DTOconverter converter = new DTOconverter();
+		BookDTO result = converter.getBookDTO(e);
+		return result;
 		
 	}
-	
-	return null;
 		
 		
 		
